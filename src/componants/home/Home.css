@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-nav {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50000;
+  position: fixed;
+  top: 0;
+}
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo-div {
+  width: 450px;
+  height: 100%;
+  /* background-color: rgb(46, 47, 48); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navlogo {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-edu {
+  background: -webkit-linear-gradient(#eee, #44a1df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-inpt-div {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.nav-input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px 5px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  padding-left: 15px;
+}
+.search-png {
+  width: 25px;
+  height: 25px;
+}
+.cart-login-div {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-div {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-img {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+}
+.cart-text {
+  margin-left: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+.cart-text:hover {
+  color: #44a1df;
+}
+
+.line {
+  height: 40px;
+  border-right: 2px solid white;
+}
+
+/* -------------------------------------------------------subnav----------------------------------------------------- */
+.subnav {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+}
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+}
+.dropbtn:hover .subnav-items {
+  box-shadow: 0px 4px rgb(255, 255, 255);
+}
+.arrow {
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  height: 260px;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .cmpny-name {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .cmpny-name:hover {
+  background-color: #252525;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #111111;
+}
+.cmpny-name {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.subnav-items {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  align-items: center;
+}

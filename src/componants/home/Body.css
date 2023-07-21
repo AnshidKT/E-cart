@@ -1,0 +1,266 @@
+.FirstBody {
+  margin-top: 120px;
+  width: 100%;
+  height: 58vh;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+}
+.body-img {
+  width: 100%;
+  height: 350px;
+}
+#carouselExampleInterval {
+  width: 100%;
+}
+
+/* =======================================================scndbody============================================= */
+
+.SecondBody {
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.scndbody-caro {
+  width: 85%;
+  height: 170px;
+  /* background-color: black; */
+}
+.carousle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coro-map-div {
+  margin-left: 210px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.scnd-coro-img {
+  width: 140px;
+  background-color: rgb(24, 23, 23);
+  height: 150px;
+}
+
+.scnd-menus-div {
+  width: 85%;
+  height: 450px;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menus-text {
+  font-size: 25px;
+  color: white;
+  margin-left: 35px;
+}
+.menus-head-div {
+  width: 100%;
+  height: 370px;
+  /* background-color: azure; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menus-div {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgb(10, 10, 10);
+  border-radius: 8px;
+}
+.menus-img {
+  width: 240px;
+  height: 200px;
+}
+.menus-div:hover .menus-img {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+.menus-div:hover .menus-img2 {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+.menus-div:hover .menus-btn {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 5px gray;
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+.menus-h3 {
+  font-size: 17px;
+  color: white;
+}
+.menus-btn {
+  border: 0;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  color: aliceblue;
+  background-color: rgb(214, 64, 10);
+}
+
+/* ------------------------------------------------------THRDBODY------------------------------------------------- */
+
+.ThrdBoy {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.heighlt-div {
+  width: 85%;
+  height: 500px;
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heiglts-text {
+  font-size: 25px;
+  color: white;
+  margin-left: 15px;
+}
+.heighlt-img-div {
+  width: 100%;
+  height: 450px;
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+}
+.higlts-img {
+  width: 360px;
+  height: 210px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+/* ------------------------------------------------------ForthBODY------------------------------------------------- */
+
+.ForthBody {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menus-img2 {
+  width: 190px;
+  height: 180px;
+}
+
+/* ------------------------------------------------------FifthBODY------------------------------------------------- */
+
+.FifthBody {
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.fifth-sub1-div {
+  width: 85%;
+  height: 370px;
+  /* background-color: rgb(150, 173, 194); */
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.fifth-text {
+  color: white;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+.boult-div {
+  width: 100%;
+  height: 320px;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.boult-img {
+  width: 550px;
+  height: 270px;
+  border-radius: 8px;
+}
+.fifth-jack-div {
+  width: 85%;
+  height: 320px;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.jack-img {
+  width: 260px;
+  border-radius: 8px;
+  height: 300px;
+}
+
+
+/* ------------------------------------------------FOOTER------------------------------------------------. */
+.Footer{
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-footer{
+  width: 700px;
+  height: 150px;
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.media-div{
+  width: 200px;
+  height: 70px;
+  /* background-color: black; */
+  display: flex;align-items: center;
+  justify-content: space-evenly;
+}
+.insta-logo{
+  width: 40px;
+  height: 40px;
+}
+.insta-logo:hover{
+  box-shadow: 0 2px rgb(255, 255, 255);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.footer-p{
+  color: white;
+}
