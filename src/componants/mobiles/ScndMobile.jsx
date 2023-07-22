@@ -3,8 +3,15 @@ import { mobile } from "../home/Datas";
 import Footer from "../home/Footer";
 import AboutPopup from "./AboutPopup";
 const ScndMobile = () => {
-  const [btnn, setbtnn] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [productDetails, setProductDetails]= useState();
 
+
+  const onClickAbout = (item) => {
+    setModal(true);
+    setProductDetails(item)
+    console.log("item", item);
+  };
   return (
     <div>
       <div className="ScndMobile">
@@ -26,7 +33,7 @@ const ScndMobile = () => {
                   </div>
                   <input
                     type="button"
-                    onClick={() => setbtnn(true)}
+                    onClick={() => onClickAbout(item)}
                     value="About"
                     className="phone-btn"
                   />
@@ -39,7 +46,7 @@ const ScndMobile = () => {
         <div className="mobile-about-div">
           {/* <button onClick={()=>setbtnn(true)}>click</button> */}
 
-          <AboutPopup trigger={btnn} setTrigger={setbtnn}></AboutPopup>
+          <AboutPopup trigger={modal} setTrigger={setModal} product={productDetails}/>
 
           <div className="about-img-div">
             <img
