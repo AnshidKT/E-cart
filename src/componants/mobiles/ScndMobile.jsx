@@ -18,11 +18,11 @@ const ScndMobile = () => {
                   <h3 className="phone-name"> {item.name}</h3>
                   <h3 className="phone-name"> {item.rate}</h3>
                   <div className="star-div">
-                    <img src={item.star} className="star" />
-                    <img src={item.star} className="star" />
-                    <img src={item.star} className="star" />
-                    <img src={item.star} className="star" />
-                    <img src={item.star} className="star" />
+                    <img src={item.star} className="star" alt=""/>
+                    <img src={item.star} className="star" alt=""/>
+                    <img src={item.star} className="star" alt=""/>
+                    <img src={item.star} className="star" alt=""/>
+                    <img src={item.star} className="star" alt=""/>
                   </div>
                   <input
                     type="button"
