@@ -28,7 +28,7 @@ const Desktop = () => {
           <div className="mobile-map-div">
             {dsktop.map((item) => (
               <div className="mobile-box">
-                <img src={item.img} className="mibile-imgg" />
+                <img src={item.img} className="mibile-imgg" alt="" />
                 <div className="mobile-details-div">
                   <h3 className="phone-name"> {item.name}</h3>
                   <h3 className="phone-name"> {item.rate}</h3>

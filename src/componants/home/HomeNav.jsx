@@ -21,7 +21,7 @@ const HomeNav = () => {
         <div className="navbar">
           <div className="logo-div">
             <Link to="/">
-              <img src={navlogo} className="navlogo" />
+              <img src={navlogo} className="navlogo" alt=""/>
             </Link>
             <h3 className="nav-edu">EDU ELECTRONICS</h3>
           </div>
@@ -34,21 +34,21 @@ const HomeNav = () => {
               placeholder="Find youre favorite prodects"
               className="nav-input"
             />
-            <img
+            <img alt=""
               src="https://img.icons8.com/?size=512&id=132&format=png"
               className="search-png"
             />
           </div>
           <div className="cart-login-div">
             <div className="cart-div">
-              <img src={cart} className="cart-img" />
+              <img src={cart} className="cart-img"alt="" />
               <span className="cart-text">Cart</span>
             </div>
 
             <div className="line"></div>
 
             <div onClick={() => setlogin(true)} className="cart-div">
-              <img src={loginimg} className="cart-img" />
+              <img src={loginimg} className="cart-img"alt="" />
               <span className="cart-text">Login</span>
             </div>
           </div>
@@ -59,7 +59,7 @@ const HomeNav = () => {
             <div className="dropdown">
               <div className="dropbtn">
                 <h3 className="subnav-items">{item.prodect}</h3>
-                <img src={item.arrow} className="arrow" />
+                <img src={item.arrow} className="arrow" alt=""/>
               </div>
               <div className="dropdown-content">
                 <h6 className="cmpny-name">{item.cmpny1}</h6>

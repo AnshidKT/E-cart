@@ -22,7 +22,7 @@ const SecondBody = () => {
           <Carousel className="carousle" responsive={responsive}>
             {scndcoro.map((item) => (
               <div className="coro-map-div">
-                <img src={item.img} className="scnd-coro-img" />
+                <img src={item.img} className="scnd-coro-img" alt=""/>
               </div>
             ))}
           </Carousel>
@@ -33,7 +33,7 @@ const SecondBody = () => {
           <div className="menus-head-div">
             {menus.map((item) => (
               <div className="menus-div">
-                <img src={item.img} className="menus-img" />
+                <img src={item.img} className="menus-img"alt="" />
                 <h3 className="menus-h3">{item.text}</h3>
 
                 <Link to={item.link}>

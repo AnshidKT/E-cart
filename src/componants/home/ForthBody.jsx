@@ -10,7 +10,7 @@ const ForthBody = () => {
           <div className="menus-head-div">
             {menus2.map((item) => (
               <div className="menus-div">
-                <img src={item.img} className="menus-img2" />
+                <img src={item.img} className="menus-img2" alt=""/>
                 <h3 className="menus-h3">{item.text}</h3>
                 <input type="button" className="menus-btn" value="More items" />
               </div>

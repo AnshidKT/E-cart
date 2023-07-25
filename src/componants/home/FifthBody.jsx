@@ -22,7 +22,7 @@ const FifthBody = () => {
         </div>
         <div className="fifth-jack-div">
           {fifth.map((item) => (
-            <img src={item.img} className="jack-img" />
+            <img src={item.img} className="jack-img" alt=""/>
           ))}
         </div>
       </div>

@@ -4,9 +4,7 @@ import logimg from "../home/home-imgs/pngtree-design-3d-electronic-logo-png-imag
 import cross from "../home/home-imgs/icons8-cross-50.png";
 const Login = (props) => {
   function erroe_fn() {
-    var name = document.getElementById("size1").value;
     var email = document.getElementById("size2").value;
-    var password = document.getElementById("size3").value;
 
     if (email == "") {
       document.getElementById("span3").style.display = "inline";

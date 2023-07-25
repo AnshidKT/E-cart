@@ -1,5 +1,4 @@
 import React from "react";
-import HomeNav from "./home/HomeNav";
 import FirstBody from "./home/FirstBody";
 import SecondBody from "./home/SecondBody";
 import ThrdBody from "./home/ThrdBody";

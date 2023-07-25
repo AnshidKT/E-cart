@@ -20,42 +20,42 @@ const FirstBody = () => {
               class="carousel-item active"
               data-bs-interval="2000"
             >
-              <img src={img1} class="d-block" className="body-img" />
+              <img src={img1} class="d-block" className="body-img" alt="" />
             </div>
             <div
               id="body-coro-div"
               class="carousel-item"
               data-bs-interval="3000"
             >
-              <img src={img2} class="d-block " className="body-img" />
+              <img src={img2} class="d-block " className="body-img" alt=""/>
             </div>
             <div
               id="body-coro-div"
               class="carousel-item"
               data-bs-interval="2000"
             >
-              <img src={img3} class="d-block w-100 " className="body-img" />
+              <img src={img3} class="d-block w-100 " className="body-img" alt=""/>
             </div>
             <div
               id="body-coro-div"
               class="carousel-item"
               data-bs-interval="3000"
             >
-              <img src={img4} class="d-block w-100 " className="body-img" />
+              <img src={img4} class="d-block w-100 " className="body-img" alt="" />
             </div>
             <div
               id="body-coro-div"
               class="carousel-item"
               data-bs-interval="2000"
             >
-              <img src={img5} class="d-block w-100 " className="body-img" />
+              <img src={img5} class="d-block w-100 " className="body-img" alt="" />
             </div>
             <div
               id="body-coro-div"
               class="carousel-item"
               data-bs-interval="3000"
             >
-              <img src={img6} class="d-block w-100 " className="body-img" />
+              <img src={img6} class="d-block w-100 " className="body-img" alt=""/>
             </div>
           </div>
           <button
