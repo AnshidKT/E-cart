@@ -171,3 +171,54 @@
   color: white;
   align-items: center;
 }
+
+/* ------------------------------------------------MEADIQUERY NAVBAR---------------------------------------------------- */
+
+@media (max-width: 500px) {
+  * {
+    overflow-x: hidden;
+  }
+  .main-nav {
+    height: 90px;
+  }
+  .navbar {
+    /* background-color: aqua; */
+    justify-content: space-between;
+  }
+  .logo-div {
+    width: 250px;
+    /* background-color: #252525; */
+  }
+  .navlogo {
+    width: 55px;
+    height: 55px;
+  }
+  .nav-edu {
+    font-size: 17px;
+  }
+  .nav-inpt-div {
+    display: none;
+  }
+  .cart-login-div {
+    width: 120px;
+    /* background-color: #44a1df; */
+  }
+  .cart-div {
+    width: 100%;
+    /* background-color: #000000; */
+  }
+  .cart-img {
+    width: 18px;
+    height: 18px;
+  }
+  .cart-text {
+    font-size: 14px;
+  }
+  .line {
+    height: 20px;
+  }
+
+  .subnav {
+    display: none;
+  }
+}

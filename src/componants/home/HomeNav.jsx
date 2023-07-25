@@ -47,11 +47,9 @@ const HomeNav = () => {
 
             <div className="line"></div>
 
-            <div className="cart-div">
+            <div onClick={() => setlogin(true)} className="cart-div">
               <img src={loginimg} className="cart-img" />
-              <span onClick={() => setlogin(true)} className="cart-text">
-                Login
-              </span>
+              <span className="cart-text">Login</span>
             </div>
           </div>
         </div>
