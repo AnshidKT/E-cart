@@ -1,7 +1,7 @@
 .Mobiles {
   width: 100%;
   height: 85vh;
-  background-color: rgb(39, 37, 37);
+  background-color: rgb(24, 23, 23);
   margin-top: 120px;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@
   height: 260vh;
   display: flex;
   /* align-items: center; */
-  background-color: rgb(39, 37, 37);
+  background-color: rgb(24, 23, 23);
   justify-content: space-evenly;
 }
 .sub-ScndMobile {
@@ -171,8 +171,7 @@
 }
 .sub-about-text-div {
   width: 55%;
-    
-  height: 100%;
+  height: 90%;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -290,8 +289,9 @@
   margin-right: 20px;
 }
 .about-cart-img {
-  width: 35px;
-  height: 35px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
 }
 .about-cart-btn {
   border-radius: 5px;

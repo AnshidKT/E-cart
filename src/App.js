@@ -8,6 +8,14 @@ import FirstBody from './componants/home/FirstBody';
 import Login from './componants/loginpage/Login';
 import Mobiles from './componants/mobiles/Mobiles';
 import './componants/mobiles/mobiles.css'
+import './componants/Ac-Folder/Ac.css'
+import './componants/Fridge-folder/Fridge.css'
+import './componants/Desktop-folder/Desktop.css'
+import AirCondition from './componants/Ac-Folder/AirCondition';
+import Fridge from './componants/Fridge-folder/Fridge';
+import Desktop from './componants/Desktop-folder/Desktop';
+
+
 function App() {
   return (
 
@@ -18,6 +26,12 @@ function App() {
         <Route path='/FirstBody' element={<FirstBody/>}/>
         <Route path='/Login' element={<Login/>}/>
         <Route path='/Mobiles' element={<Mobiles/>}/>
+        <Route path='/AirCondition' element={<AirCondition/>}/>
+        <Route path='/Fridge' element={<Fridge/>}/>
+        <Route path='Desktop' element={<Desktop/>}/>
+
+       
+      
       </Route>
     
 

@@ -1,0 +1,115 @@
+.ac-frstbody {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(24, 23, 23);
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ac-main-img {
+  width: 90%;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.ac-items-about-div {
+  width: 100%;
+  height: 280vh;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.ac-items-div {
+  width: 350px;
+  height: 1700px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.ac-card-div {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ac-card-images {
+  width: 300px;
+  /* background-color: aqua; */
+  height: 100px;
+}
+.ac-card-name {
+  color: rgba(255, 255, 255, 0.664);
+  font-size: 20px;
+  text-align: center;
+}
+.ac-card-rate {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ac-about-div {
+  position: sticky;
+  top: 120px;
+  width: 750px;
+  height: 450px;
+  margin-bottom: 75px;
+  margin-top: 85px;
+}
+.about-ac-img {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+.ac-about-box {
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ac-about-acimg {
+  width: 450px;
+  height: 150px;
+}
+.ac-about-line {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+.ac-about-text-div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ac-about-text-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.ac-features-div {
+  width: 45%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.329);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

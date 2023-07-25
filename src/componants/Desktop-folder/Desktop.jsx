@@ -1,24 +1,32 @@
-import React, { useState } from "react";
-import { mobile } from "../home/Datas";
+import DskTopPopup from "./DskTopPopup";
+import { dsktop } from "../home/Datas";
+import { useState } from "react";
 import Footer from "../home/Footer";
-import AboutPopup from "./AboutPopup";
-const ScndMobile = () => {
-  const [modal, setModal] = useState(false);
-  const [productDetails, setProductDetails] = useState();
 
-  const onClickAbout = (item) => {
-    setModal(true);
-    setProductDetails(item);
-    
-    // console.log("item", item);
+const Desktop = () => {
+  const [deskModel, setDeskmodel] = useState(false);
+  const [deskProdect, setDeskProdect] = useState();
+
+  const onClickDeskAbout = (item) => {
+    setDeskmodel(true);
+    setDeskProdect(item);
   };
+
   return (
     <div>
-      <div className="ScndMobile">
+      <div className="desktop-image-div">
+        <img
+          src="https://www.aocindia.com/images/bann01.webp"
+          alt=""
+          className="desktop-img"
+        />
+      </div>
+
+      <div className="frdge-body-div">
         <div className="sub-ScndMobile">
           <h3 className="mobile-trnd-h3">Top Trending Deals</h3>
           <div className="mobile-map-div">
-            {mobile.map((item) => (
+            {dsktop.map((item) => (
               <div className="mobile-box">
                 <img src={item.img} className="mibile-imgg" />
                 <div className="mobile-details-div">
@@ -33,7 +41,7 @@ const ScndMobile = () => {
                   </div>
                   <input
                     type="button"
-                    onClick={() => onClickAbout(item)}
+                    onClick={() => onClickDeskAbout(item)}
                     value="About"
                     className="phone-btn"
                   />
@@ -46,33 +54,33 @@ const ScndMobile = () => {
         <div className="mobile-about-div">
           {/* <button onClick={()=>setbtnn(true)}>click</button> */}
 
-          <AboutPopup
-            trigger={modal}
-            setTrigger={setModal}
-            product={productDetails}
+          <DskTopPopup
+            trigger={deskModel}
+            setTrigger={setDeskmodel}
+            prodect={deskProdect}
           />
 
           <div className="about-img-div">
             <img
               className="about-mobile-img"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1687515262/Croma%20Assets/CMS/PCP/23rd%20June/PCP_3split_flagship_iphone13_23june2023_dc5vc9.png?tr=w-720"
+              src="https://png.pngtree.com/background/20230425/original/pngtree-intelligent-robot-computer-data-processing-cloud-computing-advertising-background-picture-image_2477583.jpg"
               alt=""
             />
             <img
               className="about-mobile-img2"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1686761716/Croma%20Assets/CMS/PCP/Realme%2011%20Pro/PCP_2Split_realme11pro_14June2023_peuknx.png?tr=w-720"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDJ0O0Tf1FSmeQ9cz6mkb4wXBRaxTKEGiww&usqp=CAU"
               alt=""
             />
           </div>
           <div className="about-img-div">
             <img
               className="about-mobile-img2"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1689400134/Croma%20Assets/CMS/LP%20Page%20Banners/2023/Oneplus%20Nord/PCP_2Split_Mobile_OneplusNord35G_12July2023_vo8sth.png?tr=w-720"
+              src="https://images.pexels.com/videos/3973259/pexels-photo-3973259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
             />
             <img
               className="about-mobile-img"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1684242603/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Flagship%20Phones/PCP_3split_flagship_oneplus_15May2023_b6ak4d.png?tr=w-720"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6i2W6wmzi6M9lYBplA08wISpnIs6NCiEMag&usqp=CAU "
               alt=""
             />
           </div>
@@ -83,4 +91,4 @@ const ScndMobile = () => {
   );
 };
 
-export default ScndMobile;
+export default Desktop;

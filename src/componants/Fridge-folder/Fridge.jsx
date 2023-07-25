@@ -1,24 +1,31 @@
 import React, { useState } from "react";
-import { mobile } from "../home/Datas";
+import { frdge } from "../home/Datas";
 import Footer from "../home/Footer";
-import AboutPopup from "./AboutPopup";
-const ScndMobile = () => {
-  const [modal, setModal] = useState(false);
-  const [productDetails, setProductDetails] = useState();
+import FrdgePopup from "./FrdgePopup";
 
-  const onClickAbout = (item) => {
-    setModal(true);
-    setProductDetails(item);
-    
-    // console.log("item", item);
+const Fridge = () => {
+  const [frdgeModel, setfrdgeModel] = useState(false);
+  const [frdgeProdect, setFrdgeProdect] = useState();
+
+  const onClickFrdgeAbout = (item) => {
+    setfrdgeModel(true);
+    setFrdgeProdect(item);
   };
+
   return (
     <div>
-      <div className="ScndMobile">
+      <div className="Fridge-img-div">
+        <img
+          src="https://waltonbd.com/image/catalog/refrigerator-and-freezer/non-frost.jpg"
+          alt=""
+          className="frdge-main-img"
+        />
+      </div>
+      <div className="frdge-body-div">
         <div className="sub-ScndMobile">
           <h3 className="mobile-trnd-h3">Top Trending Deals</h3>
           <div className="mobile-map-div">
-            {mobile.map((item) => (
+            {frdge.map((item) => (
               <div className="mobile-box">
                 <img src={item.img} className="mibile-imgg" />
                 <div className="mobile-details-div">
@@ -33,7 +40,7 @@ const ScndMobile = () => {
                   </div>
                   <input
                     type="button"
-                    onClick={() => onClickAbout(item)}
+                    onClick={() => onClickFrdgeAbout(item)}
                     value="About"
                     className="phone-btn"
                   />
@@ -46,33 +53,33 @@ const ScndMobile = () => {
         <div className="mobile-about-div">
           {/* <button onClick={()=>setbtnn(true)}>click</button> */}
 
-          <AboutPopup
-            trigger={modal}
-            setTrigger={setModal}
-            product={productDetails}
+          <FrdgePopup
+            trigger={frdgeModel}
+            setTrigger={setfrdgeModel}
+            prodect={frdgeProdect}
           />
 
           <div className="about-img-div">
             <img
               className="about-mobile-img"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1687515262/Croma%20Assets/CMS/PCP/23rd%20June/PCP_3split_flagship_iphone13_23june2023_dc5vc9.png?tr=w-720"
+              src="https://mir-s3-cdn-cf.behance.net/projects/404/90eddf144876893.Y3JvcCwzNjAwLDI4MTUsMCwzOTI.jpg"
               alt=""
             />
             <img
               className="about-mobile-img2"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1686761716/Croma%20Assets/CMS/PCP/Realme%2011%20Pro/PCP_2Split_realme11pro_14June2023_peuknx.png?tr=w-720"
+              src="https://www.lg.com/in/images/about-lg/press-release/REF-SBS---Because-Nothing-Else-Can-Match_Table-Top_2x1-Ratio-01.jpg"
               alt=""
             />
           </div>
           <div className="about-img-div">
             <img
               className="about-mobile-img2"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1689400134/Croma%20Assets/CMS/LP%20Page%20Banners/2023/Oneplus%20Nord/PCP_2Split_Mobile_OneplusNord35G_12July2023_vo8sth.png?tr=w-720"
+              src="https://img.global.news.samsung.com/in/wp-content/uploads/2018/04/Digital-Inverter-Refrigerator-Newsroom.jpg"
               alt=""
             />
             <img
               className="about-mobile-img"
-              src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1684242603/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Flagship%20Phones/PCP_3split_flagship_oneplus_15May2023_b6ak4d.png?tr=w-720"
+              src="https://i.pinimg.com/originals/c6/a0/10/c6a01078c17e3421fc2def9ee8aefc1e.png  "
               alt=""
             />
           </div>
@@ -83,4 +90,4 @@ const ScndMobile = () => {
   );
 };
 
-export default ScndMobile;
+export default Fridge;
