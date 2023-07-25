@@ -162,3 +162,22 @@
   background-color: #000000;
   border: 0;
 }
+
+
+
+
+
+/* -----------------------MEDIAQUERY------------------- */
+
+.login{
+  /* margin-left: -255px; */
+
+  background-color: #a50f0f;
+  overflow: hidden;
+
+  z-index: 1000;
+
+}
+.login-box{
+  display: none;
+}

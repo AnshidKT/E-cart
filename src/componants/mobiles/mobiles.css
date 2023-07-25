@@ -339,3 +339,84 @@
   height: 360px;
   margin-top: -30px;
 }
+
+/* ------------------MEDIAQUERY-------------------- */
+@media (max-width: 500px) {
+  .Mobiles {
+    /* background-color: aqua; */
+    margin-top: 70px;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-img {
+    height: 190px;
+  }
+  .moile-treate-div {
+    display: none;
+  }
+
+  .ScndMobile {
+    /* background-color: aqua; */
+    height: 180vh;
+  }
+  .sub-ScndMobile {
+    /* background-color: blue; */
+    width: 160px;
+    height: 1150px;
+  }
+  .mobile-trnd-h3 {
+    font-size: 15px;
+  }
+  .mobile-map-div {
+    /* background-color: brown; */
+  }
+  .mobile-box {
+    border-radius: 4px;
+    height: 150px;
+  }
+  .mibile-imgg {
+    width: 65px;
+    height: 40%;
+  }
+  .mobile-details-div {
+    /* background-color: blue; */
+    width: 120px;
+    height: 150px;
+  }
+  .phone-name {
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .star-div {
+    width: 80%;
+  }
+  .star {
+    width: 15px;
+    height: 15px;
+  }
+  .phone-btn {
+    width: 65px;
+    height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+  }
+
+  .mobile-about-div {
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    top: 0;
+    /* background-color: cadetblue; */
+  }
+  .about-mobile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .about-mobile-img2 {
+    width: 100px;
+    height: 90px;
+    border-radius: 5px;
+  }
+}

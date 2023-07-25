@@ -180,46 +180,47 @@
   }
   .main-nav {
     height: 80px;
+    overflow-x: hidden;
   }
   .navbar {
     /* background-color: aqua; */
-    justify-content: space-between;
+    justify-content: space-between;overflow-x: hidden;
   }
   .logo-div {
     width: 250px;
-    /* background-color: #252525; */
+    /* background-color: #252525; */overflow-x: hidden;
   }
   .navlogo {
     width: 55px;
-    height: 55px;
+    height: 55px;overflow-x: hidden;
   }
   .nav-edu {
-    font-size: 17px;
+    font-size: 17px;overflow-x: hidden;
   }
   .nav-inpt-div {
-    display: none;
+    display: none;overflow-x: hidden;
   }
   .cart-login-div {
     width: 120px;
     /* background-color: #44a1df; */
   }
   .cart-div {
-    width: 100%;
+    width: 100%;overflow-x: hidden;
     /* background-color: #000000; */
   }
   .cart-img {
     width: 18px;
-    height: 18px;
+    height: 18px;overflow-x: hidden;
   }
   .cart-text {
-    font-size: 14px;
+    font-size: 14px;overflow-x: hidden;
   }
   .line {
     height: 20px;
-    display: none;
+    display: none;overflow-x: hidden;
   }
 
   .subnav {
-    display: none;
+    display: none;overflow-x: hidden;
   }
 }
