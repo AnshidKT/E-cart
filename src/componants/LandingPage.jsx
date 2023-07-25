@@ -10,12 +10,12 @@ import Footer from "./home/Footer";
 const LandingPage = () => {
   return (
     <div>
-      {/* <FirstBody /> */}
-      {/* <SecondBody />
+      <FirstBody />
+       <SecondBody />
       <ThrdBody />
       <ForthBody />
       <FifthBody />
-      <Footer /> */}
+      <Footer /> 
     </div>
   );
 };

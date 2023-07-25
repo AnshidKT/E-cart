@@ -15,6 +15,28 @@
   width: 100%;
 }
 
+
+/* -------------------------meadiaquery--------------------- */
+@media(max-width:500px){
+
+  .FirstBody{
+    margin-top: 60px;
+    height: 36vh;
+    background-color: rgb(24, 23, 23);  }
+  .body-img{
+    height: 220px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
 /* =======================================================scndbody============================================= */
 
 .SecondBody {
@@ -118,6 +140,69 @@
   background-color: rgb(214, 64, 10);
 }
 
+
+
+/* --------------------MEDIAQIERYYY----------------------------- */
+@media(max-width:500px){
+  .SecondBody{
+    /* background-color: aqua; */
+    height: 220vh;
+    justify-content: space-evenly;
+  }
+  .scndbody-caro{
+    /* background-color: black; */
+    width: 90%;
+    height: 130px;
+    overflow: hidden;
+  }
+  .carousle{
+    /* background-color: cadetblue; */
+  }
+  .coro-map-div {
+    /* background-color: blue; */
+   margin-left: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  .scnd-coro-img{
+    width:90px ;
+    height: 100px;
+  }
+
+
+
+  .scnd-menus-div{
+    justify-content: space-between;
+    height: 88%;
+    /* background-color: blue;  */
+    align-items: center; 
+  }
+  .menus-text{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .menus-head-div{
+/* background-color: brown; */
+    flex-direction: column;
+    height: 96%;
+  }
+
+  .menus-div{
+    width: 200px;
+    height: 280px;
+  }
+  .menus-img{
+    width: 200px;
+    height: 160px;
+  }
+  .menus-text,.menus-h3{
+    overflow: hidden;
+  }
+
+
+
+
+}
 /* ------------------------------------------------------THRDBODY------------------------------------------------- */
 
 .ThrdBoy {
@@ -158,6 +243,11 @@
   border-radius: 8px;
   margin-left: 10px;
 }
+
+
+/* ----------------------MEDIAQUERYYY===================== */
+
+
 
 /* ------------------------------------------------------ForthBODY------------------------------------------------- */
 
