@@ -226,9 +226,8 @@
   height: 300px;
 }
 
-
 /* ------------------------------------------------FOOTER------------------------------------------------. */
-.Footer{
+.Footer {
   width: 100%;
   height: 30vh;
   background-color: black;
@@ -236,7 +235,7 @@
   align-items: center;
   justify-content: center;
 }
-.sub-footer{
+.sub-footer {
   width: 700px;
   height: 150px;
   /* background-color: aliceblue; */
@@ -245,22 +244,23 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.media-div{
+.media-div {
   width: 200px;
   height: 70px;
   /* background-color: black; */
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
-.insta-logo{
+.insta-logo {
   width: 40px;
   height: 40px;
 }
-.insta-logo:hover{
+.insta-logo:hover {
   box-shadow: 0 2px rgb(255, 255, 255);
   transform: scale(1.1);
   transition-duration: 0.3s;
 }
-.footer-p{
+.footer-p {
   color: white;
 }

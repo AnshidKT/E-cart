@@ -167,7 +167,6 @@
   width: 100%;
   height: 100%;
   /* background-color: aqua; */
-
 }
 .sub-about-text-div {
   width: 55%;
@@ -179,7 +178,7 @@
 }
 
 .about-phone-name {
-    margin-left: 10px;
+  margin-left: 10px;
   font-size: 23px;
   color: rgb(255, 255, 255);
 }
@@ -192,10 +191,10 @@
   justify-content: flex-start;
   align-items: center;
 }
-.about-rate-h3{
-    margin-left: 10px;
-    font-size: 23px;
-    color: rgba(255, 255, 255, 0.753);
+.about-rate-h3 {
+  margin-left: 10px;
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.753);
 }
 .tax-div {
   width: 150px;
@@ -210,7 +209,6 @@
   color: rgba(255, 255, 255, 0.815);
   margin-top: -6px;
   margin-left: 10px;
-
 }
 
 .or-div {

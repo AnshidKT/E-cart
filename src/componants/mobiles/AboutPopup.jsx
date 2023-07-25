@@ -51,7 +51,7 @@ const AboutPopup = ({ trigger, setTrigger, product }) => {
             {/* {children} */}
 
             <div className="about-cart-btn-div">
-              <img src={cartimg} className="about-cart-img" alt=""/>
+              <img src={cartimg} className="about-cart-img" alt="" />
               <input
                 type="Button"
                 className="about-cart-btn"

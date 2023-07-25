@@ -1,27 +1,19 @@
-import acone from '../Ac-Folder/AC-images/248-2482664_air-conditioner-png-images-jpg-general-ac-1-5-removebg-preview.png'
-import actwo from '../Ac-Folder/AC-images/5-70-removebg-preview.png'
-import acthree from '../Ac-Folder/AC-images/A012-2-removebg-preview.png'
-import acfour from '../Ac-Folder/AC-images/SAMSUNG-1.AC_.1-removebg-preview.png'
+import acone from "../Ac-Folder/AC-images/248-2482664_air-conditioner-png-images-jpg-general-ac-1-5-removebg-preview.png";
+import actwo from "../Ac-Folder/AC-images/5-70-removebg-preview.png";
+import acthree from "../Ac-Folder/AC-images/A012-2-removebg-preview.png";
+import acfour from "../Ac-Folder/AC-images/SAMSUNG-1.AC_.1-removebg-preview.png";
 
+import frdge1 from "../Fridge-folder/frdg-imgs/243-2437729_refrigerator-png-hd-quality-samsung-double-door-refrigerator-removebg-preview.png";
+import frdge2 from "../Fridge-folder/frdg-imgs/269918_0_vizfrl-removebg-preview.png";
+import frdge3 from "../Fridge-folder/frdg-imgs/Samsung_Single_Door_Refrigerator_Png_Image_-_800x1200-removebg-preview.png";
+import frdge4 from "../Fridge-folder/frdg-imgs/download-removebg-preview.png";
+import frdge5 from "../Fridge-folder/frdg-imgs/single-door-refrigerator-1-removebg-preview.png";
 
-import frdge1 from '../Fridge-folder/frdg-imgs/243-2437729_refrigerator-png-hd-quality-samsung-double-door-refrigerator-removebg-preview.png'
-import frdge2 from '../Fridge-folder/frdg-imgs/269918_0_vizfrl-removebg-preview.png'
-import frdge3 from '../Fridge-folder/frdg-imgs/Samsung_Single_Door_Refrigerator_Png_Image_-_800x1200-removebg-preview.png'
-import frdge4 from '../Fridge-folder/frdg-imgs/download-removebg-preview.png'
-import frdge5 from '../Fridge-folder/frdg-imgs/single-door-refrigerator-1-removebg-preview.png'
-
-
-import dsktop1 from '../Desktop-folder/desktop-imges/202-2027329_dell-desktop-png-transparent-png-removebg-preview.png'
-import dsktop2 from '../Desktop-folder/desktop-imges/49-491766_computer-desktop-pc-png-computer-hd-wallpaper-png-removebg-preview.png'
-import dsktop3 from'../Desktop-folder/desktop-imges/51791-7-desktop-computer-hd-png-download-free-removebg-preview.png'
-import dsktop4 from'../Desktop-folder/desktop-imges/download-removebg-preview.png'
-import dsktop5 from'../Desktop-folder/desktop-imges/download__1_-removebg-preview.png'
-
-
-
-
-
-
+import dsktop1 from "../Desktop-folder/desktop-imges/202-2027329_dell-desktop-png-transparent-png-removebg-preview.png";
+import dsktop2 from "../Desktop-folder/desktop-imges/49-491766_computer-desktop-pc-png-computer-hd-wallpaper-png-removebg-preview.png";
+import dsktop3 from "../Desktop-folder/desktop-imges/51791-7-desktop-computer-hd-png-download-free-removebg-preview.png";
+import dsktop4 from "../Desktop-folder/desktop-imges/download-removebg-preview.png";
+import dsktop5 from "../Desktop-folder/desktop-imges/download__1_-removebg-preview.png";
 
 export const navitems = [
   {
@@ -238,7 +230,7 @@ export const menus = [
   {
     img: "https://i.pinimg.com/originals/ce/53/20/ce5320d6c5c0473084181cc6e99547f4.png",
     text: "Refrigerator",
-    link:"/Fridge"
+    link: "/Fridge",
   },
   {
     img: "https://i.pinimg.com/originals/ca/fb/90/cafb9062f27390676aa00d68f7dd1104.png",
@@ -350,133 +342,117 @@ export const mobile = [
   },
 ];
 
-
-export const ACcards=[
-  
+export const ACcards = [
   {
-    img:actwo,
-    name:"Samsung (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate:"30,990.00",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-    emi:"₹1,282/mo*"
+    img: actwo,
+    name: "Samsung (Copper Condenser, Dust Filter, CRLASA0123T0231)",
+    rate: "30,990.00",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    emi: "₹1,282/mo*",
   },
   {
-    img:acthree,
-    name:"bajaj (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate:"25,990.00",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-    emi:"1,318/mo*"
+    img: acthree,
+    name: "bajaj (Copper Condenser, Dust Filter, CRLASA0123T0231)",
+    rate: "25,990.00",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    emi: "1,318/mo*",
   },
   {
-    img:acfour,
-    name:"Blue Star 5 in (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate:"₹34,990.00",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-    emi:"₹1,647/mo*"
+    img: acfour,
+    name: "Blue Star 5 in (Copper Condenser, Dust Filter, CRLASA0123T0231)",
+    rate: "₹34,990.00",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    emi: "₹1,647/mo*",
   },
- 
+
   {
-    img:acone,
-    name:" Croma AirCondition(Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate:"₹27,990.00",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-    emi:"₹1,318/mo*"
-
-  },
-   {
-    img:actwo,
-    name:"Voltas (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate:"₹31,490.00",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-    emi:"₹1,482/mo*"
-  },
-
-]
-
-
-
-export const frdge=[
-  {
-    img:frdge1,
-    name:"LG 260 Litres 2 Star Frost Free Double Door Convertible",
-    rate:"₹35,990.00",
-    emi:"₹2,523/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: acone,
+    name: " Croma AirCondition(Copper Condenser, Dust Filter, CRLASA0123T0231)",
+    rate: "₹27,990.00",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    emi: "₹1,318/mo*",
   },
   {
-    img:frdge2,
-    name:"Whirlpool Protton 240 Litres Frost Free Triple Door",
-    rate:"₹25,100.00",
-    emi:"₹2,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: actwo,
+    name: "Voltas (Copper Condenser, Dust Filter, CRLASA0123T0231)",
+    rate: "₹31,490.00",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    emi: "₹1,482/mo*",
+  },
+];
+
+export const frdge = [
+  {
+    img: frdge1,
+    name: "LG 260 Litres 2 Star Frost Free Double Door Convertible",
+    rate: "₹35,990.00",
+    emi: "₹2,523/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:frdge3,
-    name:"Samsung Litres 2 Star Frost Free Double Door Convertible",
-    rate:"₹29,750.00",
-    emi:"₹1,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: frdge2,
+    name: "Whirlpool Protton 240 Litres Frost Free Triple Door",
+    rate: "₹25,100.00",
+    emi: "₹2,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:frdge4,
-    name:"videoconLitres  Protton 240 Litres Frost Free Triple Door",
-    rate:"₹21,120.00",
-    emi:"₹2,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: frdge3,
+    name: "Samsung Litres 2 Star Frost Free Double Door Convertible",
+    rate: "₹29,750.00",
+    emi: "₹1,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:frdge5,
-    name:"LG 260 Litres 2 Star Frost Free Double Door Convertible",
-    rate:"₹25,990.00",
-    emi:"₹1,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
-  },
-
-]
-
-
-
-
-
-export const dsktop=[
-  {
-    img:dsktop1,
-    name:"HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate:"₹35,990.00",
-    emi:"₹2,523/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: frdge4,
+    name: "videoconLitres  Protton 240 Litres Frost Free Triple Door",
+    rate: "₹21,120.00",
+    emi: "₹2,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:dsktop2,
-    name:"DELL  27 Inch Full HD IPS Display Intel Core i3",
-    rate:"₹25,100.00",
-    emi:"₹2,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: frdge5,
+    name: "LG 260 Litres 2 Star Frost Free Double Door Convertible",
+    rate: "₹25,990.00",
+    emi: "₹1,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+  },
+];
+
+export const dsktop = [
+  {
+    img: dsktop1,
+    name: "HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
+    rate: "₹35,990.00",
+    emi: "₹2,523/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:dsktop3,
-    name:"ACUS 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate:"₹29,750.00",
-    emi:"₹1,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: dsktop2,
+    name: "DELL  27 Inch Full HD IPS Display Intel Core i3",
+    rate: "₹25,100.00",
+    emi: "₹2,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:dsktop4,
-    name:"Lenova-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate:"₹21,120.00",
-    emi:"₹2,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: dsktop3,
+    name: "ACUS 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
+    rate: "₹29,750.00",
+    emi: "₹1,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    img:dsktop5,
-    name:"HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate:"₹25,990.00",
-    emi:"₹1,223/mo*",
-    star:"https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+    img: dsktop4,
+    name: "Lenova-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
+    rate: "₹21,120.00",
+    emi: "₹2,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
-]
-
-
-
-
-
+  {
+    img: dsktop5,
+    name: "HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
+    rate: "₹25,990.00",
+    emi: "₹1,223/mo*",
+    star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
+  },
+];

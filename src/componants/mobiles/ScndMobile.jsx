@@ -9,7 +9,7 @@ const ScndMobile = () => {
   const onClickAbout = (item) => {
     setModal(true);
     setProductDetails(item);
-    
+
     // console.log("item", item);
   };
   return (

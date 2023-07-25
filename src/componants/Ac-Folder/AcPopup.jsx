@@ -45,8 +45,8 @@ const AcPopup = ({ trigger, setTrigger, prodect }) => {
           </div>
 
           <div className="ac-features-div">
-          <h4 className="features-h4">Key Features</h4>
-          <ul className="feature-list">
+            <h4 className="features-h4">Key Features</h4>
+            <ul className="feature-list">
               <li>Power Output: 10 W</li>
               <li>Fast Charging: Yes</li>
               <li>Adapter Included: No</li>
@@ -57,7 +57,6 @@ const AcPopup = ({ trigger, setTrigger, prodect }) => {
           </div>
         </div>
       </div>
-      
     </div>
   ) : (
     ""

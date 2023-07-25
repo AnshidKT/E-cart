@@ -60,7 +60,7 @@ const AirCondition = () => {
           />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

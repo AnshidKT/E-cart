@@ -16,7 +16,6 @@ const LandingPage = () => {
       <ForthBody />
       <FifthBody />
       <Footer />
-      
     </div>
   );
 };
