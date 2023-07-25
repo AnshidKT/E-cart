@@ -216,6 +216,7 @@
   }
   .line {
     height: 20px;
+    display: none;
   }
 
   .subnav {
