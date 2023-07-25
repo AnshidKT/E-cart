@@ -1,4 +1,3 @@
-import React from "react";
 import img1 from "./Body-imgs/HP_jabraTWS_19July2023_ahampu.webp";
 import img2 from "./Body-imgs/HP_CromaIndulge_12July2023_wnxyxi.webp";
 import img3 from "./Body-imgs/HP_GLF_KC_9july2023_oi660y.webp";
@@ -6,7 +5,9 @@ import img4 from "./Body-imgs/HP_OneplusNord35G_12July2023_vaixuk.webp";
 import img5 from "./Body-imgs/HP_accessories_19July2023_aick27.webp";
 import img6 from "./Body-imgs/HP_ceilingfans_19July2023_xdwmx4 (1).webp";
 
+
 const FirstBody = () => {
+
   return (
     <div>
       <div className="FirstBody">
@@ -15,6 +16,14 @@ const FirstBody = () => {
           class="carousel slide"
           data-bs-ride="carousel"
         >
+
+
+         
+
+
+
+
+
           <div id="aa" class="carousel-inner">
             <div
               id="body-coro-div"

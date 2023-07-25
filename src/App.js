@@ -11,6 +11,7 @@ import './componants/mobiles/mobiles.css'
 import './componants/Ac-Folder/Ac.css'
 import './componants/Fridge-folder/Fridge.css'
 import './componants/Desktop-folder/Desktop.css'
+import './componants/loginpage/Login.css'
 import AirCondition from './componants/Ac-Folder/AirCondition';
 import Fridge from './componants/Fridge-folder/Fridge';
 import Desktop from './componants/Desktop-folder/Desktop';
