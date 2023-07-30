@@ -1,6 +1,6 @@
 import DskTopPopup from "./DskTopPopup";
 import { dsktop } from "../home/Datas";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../home/Footer";
 
 const Desktop = () => {
@@ -11,6 +11,10 @@ const Desktop = () => {
     setDeskmodel(true);
     setDeskProdect(item);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

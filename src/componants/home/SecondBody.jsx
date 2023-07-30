@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { menus, scndcoro } from "./Datas";
 import { Link } from "react-router-dom";
-const SecondBody = () => {
+const SecondBody = ({handleClick}) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -36,7 +36,7 @@ const SecondBody = () => {
                 <img src={item.img} className="menus-img"alt="" />
                 <h3 className="menus-h3">{item.text}</h3>
 
-                <Link to={item.link}>
+                <Link to={item.link} handleClick={handleClick}>
                   {" "}
                   <input
                     type="button"

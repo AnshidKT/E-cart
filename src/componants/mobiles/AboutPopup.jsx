@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cartimg from "./mobile-imgs/icons8-cart-50.png";
 
-const AboutPopup = ({ trigger, setTrigger, product }) => {
+const AboutPopup = ({ trigger, setTrigger, product,handleClick  }) => {
   // console.log("props product", product);
   return trigger ? (
     <div className="popup">
@@ -17,7 +17,7 @@ const AboutPopup = ({ trigger, setTrigger, product }) => {
             <div className="about-rate-div">
               <div className="tax-div">
                 {/* <h3 className="about-rate-h3">₹12,5999.00</h3> */}
-                <h3 className="about-rate-h3">{product.rate}</h3>
+                <h3 className="about-rate-h3">₹ {product.rate}</h3>
                 <h6 className="taxe-h6">(Incl. all Taxes)</h6>
               </div>
               <div className="or-div">
@@ -50,9 +50,15 @@ const AboutPopup = ({ trigger, setTrigger, product }) => {
             </button>
             {/* {children} */}
 
-            <div className="about-cart-btn-div">
+            <div
+              className="about-cart-btn-div"
+              onClick={()=>handleClick(product)
+              }
+            >
+             {console.log(product,"ggg")}
               <img src={cartimg} className="about-cart-img" alt="" />
               <input
+           
                 type="Button"
                 className="about-cart-btn"
                 value="Add Cart"

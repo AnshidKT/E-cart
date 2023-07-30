@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { frdge } from "../home/Datas";
 import Footer from "../home/Footer";
 import FrdgePopup from "./FrdgePopup";
@@ -11,6 +11,10 @@ const Fridge = () => {
     setfrdgeModel(true);
     setFrdgeProdect(item);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { mobile } from "../home/Datas";
 import Footer from "../home/Footer";
 import AboutPopup from "./AboutPopup";
-const ScndMobile = () => {
+const ScndMobile = ({ handleClick }) => {
   const [modal, setModal] = useState(false);
   const [productDetails, setProductDetails] = useState();
 
@@ -20,10 +20,10 @@ const ScndMobile = () => {
           <div className="mobile-map-div">
             {mobile.map((item) => (
               <div className="mobile-box">
-                <img src={item.img} className="mibile-imgg" />
+                <img alt="" src={item.img} className="mibile-imgg" />
                 <div className="mobile-details-div">
                   <h3 className="phone-name"> {item.name}</h3>
-                  <h3 className="phone-name"> {item.rate}</h3>
+                  <h3 className="phone-name"> ₹ {item.rate}</h3>
                   <div className="star-div">
                     <img src={item.star} className="star" alt="" />
                     <img src={item.star} className="star" alt="" />
@@ -48,6 +48,7 @@ const ScndMobile = () => {
 
           <AboutPopup
             trigger={modal}
+            handleClick={handleClick}
             setTrigger={setModal}
             product={productDetails}
           />

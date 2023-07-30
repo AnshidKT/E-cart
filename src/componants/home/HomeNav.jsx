@@ -1,54 +1,60 @@
 import React, { useEffect, useState } from "react";
-import navlogo from "./home-imgs/pngtree-design-3d-electronic-logo-png-image_8974833.png";
-import cart from "./home-imgs/icons8-cart-50.png";
-import { navitems } from "./Datas";
 import { Link, Outlet } from "react-router-dom";
+import navlogo from "./home-imgs/pngtree-design-3d-electronic-logo-png-image_8974833.png";
+import cartImg from "./home-imgs/icons8-cart-50.png";
+import { navitems } from "./Datas";
 import Login from "../loginpage/Login";
 import loginimg from "./home-imgs/icons8-account-50 (1).png";
 
-const HomeNav = () => {
-  const [login, setlogin] = useState(false);
-  const [popup, setpopup] = useState(false);
+const HomeNav = ({ size, setShow, cart }) => {
+  const [login, setLogin] = useState(false);
+  const [popup, setPopup] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setpopup(true);
+      setPopup(true);
     }, 3000);
   }, []);
+
   return (
     <>
       <div className="main-nav">
         <div className="navbar">
           <div className="logo-div">
             <Link to="/">
-              <img src={navlogo} className="navlogo" alt=""/>
+              <img src={navlogo} className="navlogo" alt="" />
             </Link>
             <h3 className="nav-edu">EDU ELECTRONICS</h3>
           </div>
 
-          <Login trigger={login} setTrigger={setlogin} />
+          <Login trigger={login} setTrigger={setLogin} />
 
           <div className="nav-inpt-div">
             <input
               type="text"
-              placeholder="Find youre favorite prodects"
+              placeholder="Find your favorite products"
               className="nav-input"
             />
-            <img alt=""
+            <img
               src="https://img.icons8.com/?size=512&id=132&format=png"
               className="search-png"
+              alt=""
             />
           </div>
+
           <div className="cart-login-div">
-            <div className="cart-div">
-              <img src={cart} className="cart-img"alt="" />
+            <Link to={"/Cart"} className="cart-div" onClick={() => setShow(false)}>
+              <div className="cart-items">
+                <span className="cart-add-span">{size}</span>
+                <img src={cartImg} className="cart-img" alt="" />
+              </div>
               <span className="cart-text">Cart</span>
-            </div>
+            </Link>
 
             <div className="line"></div>
 
-            <div onClick={() => setlogin(true)} className="cart-div">
-              <img src={loginimg} className="cart-img"alt="" />
+            <div onClick={() => setLogin(true)} className="login-div">
+              <img src={loginimg} className="cart-img" alt="" />
               <span className="cart-text">Login</span>
             </div>
           </div>
@@ -56,10 +62,10 @@ const HomeNav = () => {
 
         <div className="subnav">
           {navitems.map((item) => (
-            <div className="dropdown">
+            <div className="dropdown" key={item.prodect}>
               <div className="dropbtn">
                 <h3 className="subnav-items">{item.prodect}</h3>
-                <img src={item.arrow} className="arrow" alt=""/>
+                <img src={item.arrow} className="arrow" alt="" />
               </div>
               <div className="dropdown-content">
                 <h6 className="cmpny-name">{item.cmpny1}</h6>
@@ -74,7 +80,9 @@ const HomeNav = () => {
           ))}
         </div>
       </div>
-      <Outlet />
+
+      
+      <Outlet/>
     </>
   );
 };

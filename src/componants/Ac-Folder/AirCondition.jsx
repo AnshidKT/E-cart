@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { ACcards } from "../home/Datas";
 import AcPopup from "./AcPopup";
 import Footer from "../home/Footer";
@@ -12,6 +12,9 @@ const AirCondition = () => {
     setAcprodect(item);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="ac-frstbody">

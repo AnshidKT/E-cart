@@ -1,7 +1,11 @@
 import React from "react";
 import ScndMobile from "./ScndMobile";
+import { useEffect } from "react";
 
-const Mobiles = () => {
+const Mobiles = ({handleClick}) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div>
@@ -27,7 +31,7 @@ const Mobiles = () => {
           </div>
         </div>
       </div>
-      <ScndMobile />
+      <ScndMobile handleClick={handleClick} />
     </div>
   );
 };
