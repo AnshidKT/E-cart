@@ -12,14 +12,17 @@ const ScndMobile = ({ handleClick }) => {
 
     // console.log("item", item);
   };
+
+  const mobileData = mobile.filter((item) => item.cat === "mobile");
+
   return (
     <div>
       <div className="ScndMobile">
         <div className="sub-ScndMobile">
           <h3 className="mobile-trnd-h3">Top Trending Deals</h3>
           <div className="mobile-map-div">
-            {mobile.map((item) => (
-              <div className="mobile-box">
+            {mobileData.map((item) => (
+              <div key={item.id} className="mobile-box">
                 <img alt="" src={item.img} className="mibile-imgg" />
                 <div className="mobile-details-div">
                   <h3 className="phone-name"> {item.name}</h3>

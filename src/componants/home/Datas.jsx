@@ -296,6 +296,7 @@ export const fifth = [
 
 export const mobile = [
   {
+    cat:"mobile",
     id:1,
     img: "https://ismart.co.in/wp-content/uploads/2022/09/iphone-14-pro-finish-select-202209-6-7inch-gold.png",
     name: "I Phone 14 pro (4GB RAM,256GB.Glowing Gold)",
@@ -305,6 +306,7 @@ export const mobile = [
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    cat:"mobile",
     id:2,
     img: "https://ohlocal-media.s3.amazonaws.com/media/SM117045SA.jpg",
     name: "Vivo V27 5G (12GB RAM,256GB.Noble black)",
@@ -317,6 +319,7 @@ export const mobile = [
     // fnct:() => setbtnn(true)
   },
   {
+    cat:"mobile",
     id:3,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Morning%20mist-gallery.png",
     name: "One Plus 115G (16GB RAM,256GB.Light Gray)",
@@ -327,6 +330,7 @@ export const mobile = [
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    cat:"mobile",
     id:4,
     img: "https://freepngimg.com/save/133290-11-pic-apple-iphone-free-download-png-hd/940x1112",
     name: "I Phone 11 pro  (4GB RAM,256GB.Glowing red)",
@@ -337,6 +341,7 @@ export const mobile = [
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    cat:"mobile",
     id:5,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/green-img.png",
     name: "One Plus 115G (16GB RAM,256GB.Marble Observ)",
@@ -348,6 +353,7 @@ export const mobile = [
   },
 
   {
+    cat:"mobile",
     id:6,
     img: "https://download.appmifile.com/5_updatepdf_in/28/02/2019/b7c1a94f-78d8-47ca-a3aa-d6c417b62d6e.png",
     name: "Redmi F12 (4GB RAM,128GB. Blue)",
@@ -357,118 +363,162 @@ export const mobile = [
     emi: "$111/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
-];
 
-export const ACcards = [
   {
+    id:7,
+  cat:"ac",
+  amount:1,
     img: actwo,
     name: "Samsung (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: "30,990.00",
+    rate: 30990.00,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,282/mo*",
   },
-  {
+  {id:8,
+    cat:"ac",
+    amount:1,
     img: acthree,
     name: "bajaj (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: "25,990.00",
+    rate: 25990.00,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "1,318/mo*",
   },
   {
+    cat:"ac",
+    id:9,
+    amount:1,
     img: acfour,
     name: "Blue Star 5 in (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: "₹34,990.00",
+    rate: 34990.00,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,647/mo*",
   },
 
   {
+    amount:1,
+    cat:"ac",
+    id:10,
     img: acone,
     name: " Croma AirCondition(Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: "₹27,990.00",
+    rate: 27990.00,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,318/mo*",
   },
   {
+    amount:1,
+    cat:"ac",
+    id:11,
     img: actwo,
     name: "Voltas (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: "₹31,490.00",
+    rate: 31490.0,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,482/mo*",
   },
-];
 
-export const frdge = [
+
+
+
+
+
+
   {
+    amount:1,
+    id:12,
+    cat:"frdge",
     img: frdge1,
     name: "LG 260 Litres 2 Star Frost Free Double Door Convertible",
-    rate: "₹35,990.00",
+    rate: 35990,
     emi: "₹2,523/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:13,
+    cat:"frdge",
+    amount:1,
     img: frdge2,
     name: "Whirlpool Protton 240 Litres Frost Free Triple Door",
-    rate: "₹25,100.00",
+    rate: 25100,
     emi: "₹2,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:14,
+    cat:"frdge",
+    amount:1,
     img: frdge3,
     name: "Samsung Litres 2 Star Frost Free Double Door Convertible",
-    rate: "₹29,750.00",
+    rate: 29750,
     emi: "₹1,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:15,
+    cat:"frdge",
+    amount:1,
     img: frdge4,
     name: "videoconLitres  Protton 240 Litres Frost Free Triple Door",
-    rate: "₹21,120.00",
+    rate: 21120,
     emi: "₹2,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:16,
+    cat:"frdge",
+    amount:1,
     img: frdge5,
     name: "LG 260 Litres 2 Star Frost Free Double Door Convertible",
-    rate: "₹25,990.00",
+    rate: 25990,
     emi: "₹1,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
-];
 
-export const dsktop = [
   {
+    id:17,
+    cat:"desktop",
+    amount:1,
     img: dsktop1,
     name: "HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate: "₹35,990.00",
+    rate: 35990,
     emi: "₹2,523/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:18,
+    cat:"desktop",
+    amount:1,
     img: dsktop2,
     name: "DELL  27 Inch Full HD IPS Display Intel Core i3",
-    rate: "₹25,100.00",
+    rate: 25100,
     emi: "₹2,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:19,
+    cat:"desktop",
+    amount:1,
     img: dsktop3,
     name: "ACUS 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate: "₹29,750.00",
+    rate: 29750,
     emi: "₹1,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:20,
+    cat:"desktop",
+    amount:1,
     img: dsktop4,
     name: "Lenova-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate: "₹21,120.00",
+    rate: 21120,
     emi: "₹2,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
+    id:21,
+    cat:"desktop",
+    amount:1,
     img: dsktop5,
     name: "HP 27-cb1345in 27 Inch Full HD IPS Display Intel Core i3",
-    rate: "₹25,990.00",
+    rate: 25990,
     emi: "₹1,223/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },

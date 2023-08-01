@@ -1,31 +1,29 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../home/Footer";
 import eduimg from "../home/home-imgs/pngtree-design-3d-electronic-logo-png-image_8974833.png";
 
-const Cart = ({ cart, setCart,handlChange }) => {
+const Cart = ({ cart, setCart, handlChange }) => {
   const [price, setPrice] = useState(0);
 
-  const handlePrice=()=>{
-    let ans=0
-    cart.map((item)=>(
-      ans+=item.amount*item.rate
-    ))
-    setPrice(ans)
-  }
-  const handleRemove=(id)=>{
-    const arr =cart.filter((item)=>item.id!==id)
-    setCart(arr)
+  const handlePrice = () => {
+    let ans = 0;
+    cart.map((item) => (ans += item.amount * item.rate));
+    setPrice(ans);
+  };
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
     // handlePrice()
-  }
+  };
 
-  useEffect(()=>{
-    handlePrice()
-  })
+  useEffect(() => {
+    handlePrice();
+  });
 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       {/* Display Cart Items */}
@@ -60,12 +58,27 @@ const Cart = ({ cart, setCart,handlChange }) => {
                 </div>
                 <div className="cart-btn-div">
                   <div className="cart-btn-span-div">
-                    <button className="cart-btn" onClick={()=>handlChange(item, +1)}>+</button>
+                    <button
+                      className="cart-btn"
+                      onClick={() => handlChange(item, -1)}
+                    >
+                      -
+                    </button>
                     <span className="cart-btn-span">{item.amount}</span>
-                    <button className="cart-btn"onClick={()=>handlChange(item ,-1)}>-</button>
+                    <button
+                      className="cart-btn"
+                      onClick={() => handlChange(item, +1)}
+                    >
+                      +
+                    </button>
                   </div>
 
-                  <button onClick={()=>handleRemove(item.id)} className="cart-remove-btn">Remove</button>
+                  <button
+                    onClick={() => handleRemove(item.id)}
+                    className="cart-remove-btn"
+                  >
+                    Remove
+                  </button>
                 </div>
               </div>
             ))
@@ -81,13 +94,11 @@ const Cart = ({ cart, setCart,handlChange }) => {
 
           <h3 className="cart-price-h3">Total Price You're Cart</h3>
 
-<div className="cart-order-div">
-          <span className="cart-rs-span">Rs = ₹{price}</span>
+          <div className="cart-order-div">
+            <span className="cart-rs-span">Rs = ₹{price}</span>
 
-          <button className="cart-order-btn">ORDER NOW</button>
-
-</div>
-
+            <button className="cart-order-btn">ORDER NOW</button>
+          </div>
           <div className="cart-edu-div">
             <img src={eduimg} className="navlogo" alt="" />
             <h3 className="nav-edu">EDU ELECTRONICS</h3>

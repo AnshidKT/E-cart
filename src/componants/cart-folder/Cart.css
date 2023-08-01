@@ -30,7 +30,7 @@
 }
 
 .cart-phone-img {
-  width: 150px;
+  width: 170px;
   height: 150px;
   /* background-color: aliceblue; */
 }
@@ -168,9 +168,10 @@
   margin-left: 20px;
 }
 .cart-rs-span {
-  color: rgb(114, 255, 96);
+  color: rgb(192, 255, 184);
   font-size: 25px;
   margin-left: 20px;
+  font-weight: 700;
 }
 .cart-edu-div {
   width: 100%;

@@ -1,11 +1,14 @@
 import DskTopPopup from "./DskTopPopup";
-import { dsktop } from "../home/Datas";
+import { mobile } from "../home/Datas";
 import { useEffect, useState } from "react";
 import Footer from "../home/Footer";
 
-const Desktop = () => {
+const Desktop = ({handleClick}) => {
   const [deskModel, setDeskmodel] = useState(false);
   const [deskProdect, setDeskProdect] = useState();
+
+
+
 
   const onClickDeskAbout = (item) => {
     setDeskmodel(true);
@@ -15,6 +18,10 @@ const Desktop = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
+  const dsktop = mobile.filter((item) => item.cat === "desktop");
+
 
   return (
     <div>
@@ -35,7 +42,7 @@ const Desktop = () => {
                 <img src={item.img} className="mibile-imgg" alt="" />
                 <div className="mobile-details-div">
                   <h3 className="phone-name"> {item.name}</h3>
-                  <h3 className="phone-name"> {item.rate}</h3>
+                  <h3 className="phone-name">₹ {item.rate}</h3>
                   <div className="star-div">
                     <img src={item.star} className="star" alt="" />
                     <img src={item.star} className="star" alt="" />
@@ -59,6 +66,7 @@ const Desktop = () => {
           {/* <button onClick={()=>setbtnn(true)}>click</button> */}
 
           <DskTopPopup
+          handleClick={handleClick}
             trigger={deskModel}
             setTrigger={setDeskmodel}
             prodect={deskProdect}

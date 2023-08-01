@@ -19,6 +19,8 @@ import Desktop from "./componants/Desktop-folder/Desktop";
 import Cart from "./componants/cart-folder/Cart";
 import AboutPopup from "./componants/mobiles/AboutPopup";
 import { useState } from "react";
+import AcPopup from "./componants/Ac-Folder/AcPopup";
+import FrdgePopup from "./componants/Fridge-folder/FrdgePopup";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -53,7 +55,7 @@ function App() {
     if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
     setCart([...tempArr]);
   };
-
+  console.log("Cart state in App:", cart);
   return (
     <BrowserRouter>
       <Routes>
@@ -61,10 +63,24 @@ function App() {
           path="/"
           element={<HomeNav size={cart.length} setShow={setShow} cart={cart} />}
         >
-           <Route index element={<LandingPage />} />
+          <Route
+            index
+            element={
+              <LandingPage
+                setShow={setShow}
+                handleClick={handleClick}
+                size={cart.length}
+              />
+            }
+          />
           <Route
             path="/Mobiles"
             element={<Mobiles handleClick={handleClick} />}
+          />
+
+          <Route
+            path="/AirCondition"
+            element={<AirCondition handleClick={handleClick} />}
           />
 
           {show ? (
@@ -78,16 +94,26 @@ function App() {
             />
           )}
 
+ 
+
+          <Route
+            path="/Fridge"
+            element={<Fridge handleClick={handleClick} />}
+          />
+
+  
+
+          <Route
+            path="Desktop"
+            element={<Desktop handleClick={handleClick} />}
+          />
+
           {waring && alert("Item is allready added youre cart")}
 
           <Route path="./AboutPopup" element={<AboutPopup />} />
 
-         
           <Route path="/FirstBody" element={<FirstBody />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/AirCondition" element={<AirCondition />} />
-          <Route path="/Fridge" element={<Fridge />} />
-          <Route path="Desktop" element={<Desktop />} />
         </Route>
       </Routes>
     </BrowserRouter>

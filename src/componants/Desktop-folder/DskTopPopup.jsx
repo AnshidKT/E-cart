@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cartdesk from "./desktop-imges/icons8-cart-50.png";
-const DskTopPopup = ({ trigger, setTrigger, prodect }) => {
+const DskTopPopup = ({ trigger, setTrigger, prodect, handleClick }) => {
   return trigger ? (
     <div>
       <div className="popup">
@@ -16,7 +16,7 @@ const DskTopPopup = ({ trigger, setTrigger, prodect }) => {
               <div className="about-rate-div">
                 <div className="tax-div">
                   {/* <h3 className="about-rate-h3">₹12,5999.00</h3> */}
-                  <h3 className="about-rate-h3">{prodect.rate}</h3>
+                  <h3 className="about-rate-h3">₹ {prodect.rate}</h3>
                   <h6 className="taxe-h6">(Incl. all Taxes)</h6>
                 </div>
                 <div className="or-div">
@@ -55,6 +55,7 @@ const DskTopPopup = ({ trigger, setTrigger, prodect }) => {
               <div className="about-cart-btn-div">
                 <img src={cartdesk} className="about-cart-img" alt="" />
                 <input
+                  onClick={() => handleClick(prodect)}
                   type="Button"
                   className="about-cart-btn"
                   value="Add Cart"

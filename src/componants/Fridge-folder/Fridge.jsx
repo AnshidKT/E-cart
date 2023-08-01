@@ -1,9 +1,9 @@
-import React, { useState,useEffect } from "react";
-import { frdge } from "../home/Datas";
+import React, { useState, useEffect } from "react";
+import { mobile } from "../home/Datas";
 import Footer from "../home/Footer";
 import FrdgePopup from "./FrdgePopup";
 
-const Fridge = () => {
+const Fridge = ({ handleClick }) => {
   const [frdgeModel, setfrdgeModel] = useState(false);
   const [frdgeProdect, setFrdgeProdect] = useState();
 
@@ -16,11 +16,13 @@ const Fridge = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const frdge = mobile.filter((item) => item.cat === "frdge");
+
   return (
     <div>
       <div className="Fridge-img-div">
         <img
-          src="https://waltonbd.com/image/catalog/refrigerator-and-freezer/non-frost.jpg"
+          src="https://cdn.godrej.com/img/Category/REFMWOWEBBANNERSCATEGORYORD11950_31100507.jpg"
           alt=""
           className="frdge-main-img"
         />
@@ -31,10 +33,10 @@ const Fridge = () => {
           <div className="mobile-map-div">
             {frdge.map((item) => (
               <div className="mobile-box">
-                <img src={item.img} className="mibile-imgg" alt=""/>
+                <img src={item.img} className="mibile-imgg" alt="" />
                 <div className="mobile-details-div">
                   <h3 className="phone-name"> {item.name}</h3>
-                  <h3 className="phone-name"> {item.rate}</h3>
+                  <h3 className="phone-name">₹ {item.rate}</h3>
                   <div className="star-div">
                     <img src={item.star} className="star" alt="" />
                     <img src={item.star} className="star" alt="" />
@@ -58,6 +60,7 @@ const Fridge = () => {
           {/* <button onClick={()=>setbtnn(true)}>click</button> */}
 
           <FrdgePopup
+            handleClick={handleClick}
             trigger={frdgeModel}
             setTrigger={setfrdgeModel}
             prodect={frdgeProdect}

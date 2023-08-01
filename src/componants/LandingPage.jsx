@@ -7,7 +7,7 @@ import Footer from "./home/Footer";
 import HomeNav from "./home/HomeNav";
 import { useEffect } from "react";
 
-const LandingPage = () => {
+const LandingPage = ({setShow,handleClick,size}) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,9 +15,9 @@ const LandingPage = () => {
 
   return (
     <div>
-      <HomeNav />
+      <HomeNav size={size}  setShow={setShow} />
       <FirstBody />
-       <SecondBody />
+       <SecondBody/>
       <ThrdBody />
       <ForthBody />
       <FifthBody />

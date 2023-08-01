@@ -36,7 +36,7 @@ const SecondBody = ({handleClick}) => {
                 <img src={item.img} className="menus-img"alt="" />
                 <h3 className="menus-h3">{item.text}</h3>
 
-                <Link to={item.link} handleClick={handleClick}>
+                <Link to={item.link} >
                   {" "}
                   <input
                     type="button"

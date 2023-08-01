@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import carttt from "./AC-images/icons8-cart-50.png";
 
-const AcPopup = ({ trigger, setTrigger, prodect }) => {
+const AcPopup = ({ trigger, setTrigger, prodect,handleClick }) => {
   return trigger ? (
     <div>
       <div className="ac-about-box">
@@ -13,7 +13,7 @@ const AcPopup = ({ trigger, setTrigger, prodect }) => {
             <h3 className="about-phone-name">{prodect.name}</h3>
             <div className="about-rate-div">
               <div className="tax-div">
-                <h3 className="about-rate-h3">{prodect.rate}</h3>
+                <h3 className="about-rate-h3">₹ {prodect.rate}</h3>
                 <h6 className="taxe-h6">(Incl. all Taxes)</h6>
               </div>
               <div className="or-div">
@@ -36,6 +36,7 @@ const AcPopup = ({ trigger, setTrigger, prodect }) => {
               <div className="about-cart-btn-div">
                 <img src={carttt} className="about-cart-img" alt="" />
                 <input
+                onClick={()=>handleClick(prodect)}
                   type="Button"
                   className="about-cart-btn"
                   value="Add Cart"

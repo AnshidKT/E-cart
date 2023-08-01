@@ -16,6 +16,10 @@ const HomeNav = ({ size, setShow, cart }) => {
     }, 3000);
   }, []);
 
+  useEffect(() => {
+    console.log("Size prop received:", size);
+  }, [size]);
+
   return (
     <>
       <div className="main-nav">

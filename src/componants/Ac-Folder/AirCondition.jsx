@@ -1,9 +1,9 @@
 import React, { useState , useEffect} from "react";
-import { ACcards } from "../home/Datas";
+import { mobile } from "../home/Datas";
 import AcPopup from "./AcPopup";
 import Footer from "../home/Footer";
 
-const AirCondition = () => {
+const AirCondition = ({handleClick}) => {
   const [acmodel, setAcmodel] = useState(false);
   const [acProdect, setAcprodect] = useState();
 
@@ -15,6 +15,9 @@ const AirCondition = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
+  const acData = mobile.filter((item) => item.cat === "ac");
+
   return (
     <div>
       <div className="ac-frstbody">
@@ -27,11 +30,11 @@ const AirCondition = () => {
         <div className="ac-items-div">
           <h3 className="mobile-trnd-h3">Air Conditions</h3>
 
-          {ACcards.map((item) => (
+          {acData.map((item) => (
             <div className="ac-card-div">
               <img src={item.img} alt="" className="ac-card-images" />
               <h3 className="ac-card-name">{item.name}</h3>
-              <h3 className="ac-card-rate">{item.rate}</h3>
+              <h3 className="ac-card-rate">₹ {item.rate}</h3>
               <div className="star-div">
                 <img src={item.star} className="star" alt="" />
                 <img src={item.star} className="star" alt="" />
@@ -51,6 +54,7 @@ const AirCondition = () => {
 
         <div className="ac-about-div">
           <AcPopup
+          handleClick={handleClick}
             trigger={acmodel}
             setTrigger={setAcmodel}
             prodect={acProdect}
