@@ -168,7 +168,7 @@ const Cart = ({ cart, setCart, handlChange }) => {
                 {" "}
                 <input
                   name="name"
-                  value={userData.name}
+                  // value={userData.name}
                   onChange={(event) => handleInputChange2(event)}
                   placeholder="Enter Your Name"
                   type="text"
@@ -180,7 +180,7 @@ const Cart = ({ cart, setCart, handlChange }) => {
                 {" "}
                 <input
                   name="address"
-                  value={userData.address}
+                  // value={userData.address}
                   onChange={(event) => handleInputChange2(event)}
                   placeholder="Current Address"
                   type="text"
@@ -192,7 +192,7 @@ const Cart = ({ cart, setCart, handlChange }) => {
                 {" "}
                 <input
                   name="phoneNumber"
-                  value={userData.phoneNumber}
+                  // value={userData.phoneNumber}
                   onChange={(event) => handleInputChange2(event)}
                   placeholder="Contact Number"
                   type="text"

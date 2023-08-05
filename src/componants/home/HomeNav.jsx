@@ -7,22 +7,20 @@ import Login from "../loginpage/Login";
 import loginimg from "./home-imgs/icons8-account-50 (1).png";
 
 const HomeNav = ({ size, setshow, cart }) => {
-  const [login, setLogin] = useState(false);
-  const [popup, setPopup] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setPopup(true);
-    }, 3000);
-  }, []);
-
   useEffect(() => {
     console.log("Size prop received:", size);
   }, [size]);
 
+  const [isModalVisible, setModalVisible] = useState(false);
 
+  const showModal = () => {
+    setModalVisible(true);
+    console.log(showModal, "fff");
+  };
 
-
+  const hideModal = () => {
+    setModalVisible(false);
+  };
 
   return (
     <>
@@ -35,7 +33,7 @@ const HomeNav = ({ size, setshow, cart }) => {
             <h3 className="nav-edu">EDU ELECTRONICS</h3>
           </div>
 
-          <Login trigger={login} setTrigger={setLogin} />
+          {isModalVisible && <Login hideModal={hideModal} />}
 
           <div className="nav-inpt-div">
             <input
@@ -51,17 +49,21 @@ const HomeNav = ({ size, setshow, cart }) => {
           </div>
 
           <div className="cart-login-div">
-            <Link to="/Cart"  className="cart-div" onClick={ ()=>setshow(false)}>
+            <Link
+              to="/Cart"
+              className="cart-div"
+              onClick={() => setshow(false)}
+            >
               <div className="cart-items">
                 <span className="cart-add-span">{size}</span>
                 <img src={cartImg} className="cart-img" alt="" />
               </div>
               <span className="cart-text">Cart</span>
-         </Link>
+            </Link>
 
             <div className="line"></div>
 
-            <div onClick={() => setLogin(true)} className="login-div">
+            <div onClick={showModal} className="login-div">
               <img src={loginimg} className="cart-img" alt="" />
               <span className="cart-text">Login</span>
             </div>
@@ -89,8 +91,7 @@ const HomeNav = ({ size, setshow, cart }) => {
         </div>
       </div>
 
-      
-      <Outlet/>
+      <Outlet />
     </>
   );
 };

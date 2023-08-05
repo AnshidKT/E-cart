@@ -301,7 +301,7 @@ export const mobile = [
     id: 1,
     img: "https://ismart.co.in/wp-content/uploads/2022/09/iphone-14-pro-finish-select-202209-6-7inch-gold.png",
     name: "I Phone 14 pro (4GB RAM,256GB.Glowing Gold)",
-    rate: 125000.19,
+    rate: 125000,
     amount: 1,
     emi: "$741/mo*",
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
@@ -326,7 +326,7 @@ export const mobile = [
     id: 3,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Morning%20mist-gallery.png",
     name: "One Plus 115G (16GB RAM,256GB.Light Gray)",
-    rate: 95030.3,
+    rate: 95030,
     amount: 1,
 
     emi: "$620/mo*",
@@ -338,7 +338,7 @@ export const mobile = [
     id: 4,
     img: "https://freepngimg.com/save/133290-11-pic-apple-iphone-free-download-png-hd/940x1112",
     name: "I Phone 11 pro  (4GB RAM,256GB.Glowing red)",
-    rate: 78050.7,
+    rate: 78050,
     amount: 1,
 
     emi: "$571/mo*",
@@ -350,7 +350,7 @@ export const mobile = [
     id: 5,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/green-img.png",
     name: "One Plus 115G (16GB RAM,256GB.Marble Observ)",
-    rate: 84300.7,
+    rate: 84300,
     amount: 1,
 
     emi: "$614/mo*",
@@ -364,7 +364,7 @@ export const mobile = [
     id: 6,
     img: "https://download.appmifile.com/5_updatepdf_in/28/02/2019/b7c1a94f-78d8-47ca-a3aa-d6c417b62d6e.png",
     name: "Redmi F12 (4GB RAM,128GB. Blue)",
-    rate: 12100.2,
+    rate: 12100,
     amount: 1,
 
     emi: "$111/mo*",
@@ -379,7 +379,7 @@ export const mobile = [
     amount: 1,
     img: actwo,
     name: "Samsung (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 30990.0,
+    rate: 30990,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,282/mo*",
   },
@@ -391,7 +391,7 @@ export const mobile = [
     amount: 1,
     img: acthree,
     name: "bajaj (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 25990.0,
+    rate: 25990,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "1,318/mo*",
   },
@@ -403,7 +403,7 @@ export const mobile = [
     amount: 1,
     img: acfour,
     name: "Blue Star 5 in (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 34990.0,
+    rate: 34990,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,647/mo*",
   },
@@ -416,7 +416,7 @@ export const mobile = [
     id: 10,
     img: acone,
     name: " Croma AirCondition(Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 27990.0,
+    rate: 27990,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,318/mo*",
   },
@@ -428,7 +428,7 @@ export const mobile = [
     id: 11,
     img: actwo,
     name: "Voltas (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 31490.0,
+    rate: 31490.,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,482/mo*",
   },
@@ -458,7 +458,7 @@ export const mobile = [
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
   },
   {
-    name2: "Samsung Fridge ",
+    scndname: "Samsung Fridge ",
 
     id: 14,
     cat: "frdge",
@@ -471,7 +471,7 @@ export const mobile = [
   },
   {
     id: 15,
-    name2: "videoconLitres Fridge ",
+    scndname: "videoconLitres Fridge ",
 
     cat: "frdge",
     amount: 1,
@@ -486,7 +486,7 @@ export const mobile = [
     cat: "frdge",
     amount: 1,
     img: frdge5,
-    name2: "LG 60 Fridge ",
+    scndname: "LG 60 Fridge ",
 
     name: "LG 260 Litres 2 Star Frost Free Double Door Convertible",
     rate: 25990,
@@ -497,7 +497,7 @@ export const mobile = [
   {
     id: 17,
     cat: "desktop",
-    name2: "HP  Desktop ",
+    scndname: "HP  Desktop ",
 
     amount: 1,
     img: dsktop1,
@@ -510,7 +510,7 @@ export const mobile = [
     id: 18,
     cat: "desktop",
     amount: 1,
-    name2: "DELL  Desktop ",
+    scndname: "DELL  Desktop ",
 
     img: dsktop2,
     name: "DELL  27 Inch Full HD IPS Display Intel Core i3",

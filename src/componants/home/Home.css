@@ -247,7 +247,7 @@
     display: none;overflow-x: hidden;
   }
 
-  .subnav {
+  .subnav,.cart-text {
     display: none;overflow-x: hidden;
   }
 }

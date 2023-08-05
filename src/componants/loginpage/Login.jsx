@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logimg from "../home/home-imgs/pngtree-design-3d-electronic-logo-png-image_8974833.png";
 import cross from "../home/home-imgs/icons8-cross-50.png";
-const Login = (props) => {
+const Login = ({ hideModal }) => {
   function erroe_fn() {
     var email = document.getElementById("size2").value;
 
@@ -23,7 +23,7 @@ const Login = (props) => {
     }
   }
 
-  return props.trigger ? (
+  return (
     <div>
       <div className="login">
         <div className="login-box">
@@ -36,10 +36,7 @@ const Login = (props) => {
               </div>
             </div>
             <div className="crss-div">
-              <button
-                className="crss-btn"
-                onClick={() => props.setTrigger(false)}
-              >
+              <button className="crss-btn" onClick={hideModal}>
                 <img className="crossbt" src={cross} alt="" />
               </button>
             </div>
@@ -99,8 +96,6 @@ const Login = (props) => {
         </div>
       </div>
     </div>
-  ) : (
-    ""
   );
 };
 

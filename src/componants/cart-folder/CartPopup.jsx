@@ -40,7 +40,7 @@ const CartPopup = ({
           <div className="cart-popup-items-div">
             <div className="cart-popup-sub-items-full-div">
               <div className="cart-popup-phone-heading">
-                <h3 className="discription-h3">ITEMS DESCRIPTIONS</h3>
+                <h4 className="discription-h4">ITEMS DESCRIPTIONS</h4>
                 <h3 className="discription-h3">QUANTITY</h3>
                 <h3 className="discription-h3">PRICE</h3>
               </div>
@@ -56,7 +56,7 @@ const CartPopup = ({
                     <h3 className="cart-popup-item-name-h3">{item.amount}</h3>
                   </div>
                   <div className="cart-popup-item-price">
-                    <h3 className="cart-popup-item-name-h3">{item.rate}</h3>
+                    <h3 className="cart-popup-item-name-h3">₹ {item.rate}</h3>
                   </div>
                 </div>
               ))}
