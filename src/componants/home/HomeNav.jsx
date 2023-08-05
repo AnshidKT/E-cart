@@ -6,7 +6,7 @@ import { navitems } from "./Datas";
 import Login from "../loginpage/Login";
 import loginimg from "./home-imgs/icons8-account-50 (1).png";
 
-const HomeNav = ({ size, setShow, cart }) => {
+const HomeNav = ({ size, setshow, cart }) => {
   const [login, setLogin] = useState(false);
   const [popup, setPopup] = useState(false);
 
@@ -19,6 +19,10 @@ const HomeNav = ({ size, setShow, cart }) => {
   useEffect(() => {
     console.log("Size prop received:", size);
   }, [size]);
+
+
+
+
 
   return (
     <>
@@ -47,13 +51,13 @@ const HomeNav = ({ size, setShow, cart }) => {
           </div>
 
           <div className="cart-login-div">
-            <Link to={"/Cart"} className="cart-div" onClick={() => setShow(false)}>
+            <Link to="/Cart"  className="cart-div" onClick={ ()=>setshow(false)}>
               <div className="cart-items">
                 <span className="cart-add-span">{size}</span>
                 <img src={cartImg} className="cart-img" alt="" />
               </div>
               <span className="cart-text">Cart</span>
-            </Link>
+         </Link>
 
             <div className="line"></div>
 

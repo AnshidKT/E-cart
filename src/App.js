@@ -18,14 +18,13 @@ import Fridge from "./componants/Fridge-folder/Fridge";
 import Desktop from "./componants/Desktop-folder/Desktop";
 import Cart from "./componants/cart-folder/Cart";
 import AboutPopup from "./componants/mobiles/AboutPopup";
-import { useState } from "react";
-import AcPopup from "./componants/Ac-Folder/AcPopup";
-import FrdgePopup from "./componants/Fridge-folder/FrdgePopup";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [show, setShow] = useState(true);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useLocalStorage("MyCart", []);
   const [waring, setWarning] = useState(false);
+
+  const [show, setshow] = useState(true);
 
   const handleClick = (item) => {
     let isPresent = false;
@@ -43,31 +42,47 @@ function App() {
     setCart([...cart, item]);
   };
 
-  const handlChange = (item, d) => {
-    let ind = -1;
-    cart.forEach((data, index) => {
-      if (data.id === item.id) ind = index;
+  function useLocalStorage(key, initialValue) {
+    const [storedValue, setStoredValue] = useState(() => {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
     });
 
-    const tempArr = cart;
-    tempArr[ind].amount += d;
+    useEffect(() => {
+      localStorage.setItem(key, JSON.stringify(storedValue));
+    }, [key, storedValue]);
 
-    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
-    setCart([...tempArr]);
+    return [storedValue, setStoredValue];
+  }
+
+  const handlChange = (item, d) => {
+    const updatedCart = cart.map((cartItem) =>
+      cartItem.id === item.id
+        ? { ...cartItem, amount: cartItem.amount + d }
+        : cartItem
+    );
+    updatedCart.forEach((cartItem) => {
+      if (cartItem.amount < 1) {
+        cartItem.amount = 1;
+      }
+    });
+
+    setCart(updatedCart);
   };
+
   console.log("Cart state in App:", cart);
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path="/"
-          element={<HomeNav size={cart.length} setShow={setShow} cart={cart} />}
+          element={<HomeNav setshow={setshow} size={cart.length} cart={cart} />}
         >
           <Route
             index
             element={
               <LandingPage
-                setShow={setShow}
+                setshow={setshow}
                 handleClick={handleClick}
                 size={cart.length}
               />
@@ -83,28 +98,22 @@ function App() {
             element={<AirCondition handleClick={handleClick} />}
           />
 
-          {show ? (
-            <Route element={<AboutPopup setShow={setShow} />} />
-          ) : (
-            <Route
-              path="/Cart"
-              element={
-                <Cart cart={cart} setCart={setCart} handlChange={handlChange} />
-              }
-            />
-          )}
+          <Route element={<AboutPopup />} />
 
- 
+          <Route
+            path="/Cart"
+            element={
+              <Cart cart={cart} setCart={setCart} handlChange={handlChange} />
+            }
+          />
 
           <Route
             path="/Fridge"
             element={<Fridge handleClick={handleClick} />}
           />
 
-  
-
           <Route
-            path="Desktop"
+            path="/Desktop"
             element={<Desktop handleClick={handleClick} />}
           />
 
