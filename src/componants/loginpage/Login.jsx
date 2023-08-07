@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import logimg from "../home/home-imgs/pngtree-design-3d-electronic-logo-png-image_8974833.png";
 import cross from "../home/home-imgs/icons8-cross-50.png";
 const Login = ({ hideModal }) => {
+
+  
   function erroe_fn() {
     var email = document.getElementById("size2").value;
 

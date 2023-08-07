@@ -300,7 +300,7 @@ export const mobile = [
     cat: "mobile",
     id: 1,
     img: "https://ismart.co.in/wp-content/uploads/2022/09/iphone-14-pro-finish-select-202209-6-7inch-gold.png",
-    name: "I Phone 14 pro (4GB RAM,256GB.Glowing Gold)",
+    name: "I Phone 14 pro (4GB RAM,256GB. Gold)",
     rate: 125000,
     amount: 1,
     emi: "$741/mo*",

@@ -136,10 +136,89 @@
 .cart-remove-btn:hover {
   box-shadow: 0 0 5px gray;
 }
+
+/* ============MEDIAQUERY==================== */
+@media (max-width: 500px) {
+  .cart-body {
+    /* background-color: #44a1df; */
+    margin-top: 80px;
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+  .cart-items-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: #a3e583; */
+    overflow: hidden;
+  }
+  .cart-item {
+    height: 100px;
+    width: 90%;
+    overflow: hidden;
+  }
+  .cart-phone-img {
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .cart-phone-details-div {
+    /* background-color: aqua; */
+    width: 230px;
+    height: 90%;
+    overflow: hidden;
+  }
+  .cart-phone-name {
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .cart-rate-div {
+    /* background-color: blue; */
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .cart-rate-h3 {
+    overflow: hidden;
+    font-size: 12px;
+    margin-right: 26px;
+  }
+  .taxe-h6 {
+    margin-right: 26px;
+    font-size: 7px;
+    overflow: hidden;
+  }
+
+  .cart-star-div {
+    width: 60px;
+    /* background-color: #00000a; */
+    overflow: hidden;
+  }
+  .cart-btn-div {
+    overflow: hidden;
+    /* background-color: #5555ad; */
+    height: 70px;
+  }
+
+  .cart-btn {
+    /* background-color: #44a1df; */
+    overflow: hidden;
+    width: 29px;
+    height: 29px;
+  }
+
+  .cart-remove-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+  }
+}
+
 /* ==============================================price=========================================== */
 .cart-price-div {
   width: 35%;
-  height: 380px;
+  height: 410px;
   background-color: black;
   position: sticky;
   top: 130px;
@@ -208,7 +287,7 @@
 }
 .cart-adress-box {
   width: 100%;
-  height: 230px;
+  height: 260px;
   /* background-color: bisque; */
   display: flex;
   flex-direction: column;
@@ -218,8 +297,9 @@
 .textInputWrapper {
   position: relative;
   width: 250px;
-  margin: 12px 5px;
+
   --accent-color: #a3e583;
+  /* background-color: aqua; */
 }
 
 .textInputWrapper:before {
@@ -320,6 +400,85 @@
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.error-msg-div {
+  width: 250px;
+  height: 20px;
+  /* background-color: #44a1df; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.textinput-and-error-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* background-color: yellow; */
+}
+/* ==========MEDIAQUERY=================== */
+@media (max-width: 500px) {
+  .cart-price-div {
+    height: 310px;
+    top: 0;
+    overflow: hidden;
+
+    width: 80%;
+  }
+  .cart-details-div-box {
+    /* background-color: #001f33; */
+    overflow: hidden;
+    height: 85px;
+  }
+  .cart-price-h3 {
+    margin-left: 10px;
+    font-size: 16px;
+    overflow: hidden;
+  }
+  .cart-rs-span {
+    overflow: hidden;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .cart-order-btn {
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .cart-adress-box {
+    /* background-color: #086600; */
+    overflow: hidden;
+  }
+  .textInputWrapper {
+    overflow: hidden;
+  }
+  .delvery-adrrss-div {
+    /* background-color: aqua; */
+    overflow: hidden;
+  }
+  .delvery-adrrss-h3 {
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .error-message {
+    overflow: hidden;
+  }
+  .textinput-and-error-div {
+    overflow: hidden;
+  }
+  .error-msg-div {
+    overflow: hidden;
+  }
+}
+
 /* ==============================================empty===================================== */
 
 .no-cart-div {
@@ -368,6 +527,42 @@
 }
 .empy-btn:hover {
   box-shadow: 0 0 5px rgb(204, 205, 206);
+}
+
+/* ==============MEDIAQUERY===================== */
+@media (max-width: 500px) {
+  .no-cart-div {
+    /* background-color: #349de2; */
+    margin-top: 80px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .no-cart-cntnt-div {
+    /* background-color: #011929; */
+    overflow: hidden;
+    height: 100%;
+  }
+  .empty-div {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    /* background-color: #00000a; */
+  }
+  .no-cart-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .empyt-h3 {
+    font-size: 20px;
+    overflow: hidden;
+  }
+  .empy-btn {
+    width: 120px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 30px;
+  }
 }
 
 /* ======================================CartPopup===================================================== */
@@ -566,4 +761,89 @@
 }
 .cart-popup-order-btn:hover {
   box-shadow: 0 0 2px gray;
+}
+
+/* ==============MEDIAQUERY======================== */
+@media (max-width: 500px) {
+  .modal {
+    overflow: hidden;
+  }
+  .modal-content {
+    width: 90%;
+    height: 500px;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+
+  .cart-popup-cmpny-div {
+    overflow: hidden;
+    /* background-color: #44a1df; */
+  }
+  .cart-popup-cmpny-sub1 {
+    overflow: hidden;
+    width: 85%;
+    /* background-color: green; */
+  }
+  .cart-popup-cross {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .cart-popup-name-div {
+    /* background-color: #44a1df; */
+    height: 100px;
+    overflow: hidden;
+  }
+  .cart-popup-name {
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .cart-popup-name-p {
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .cart-popup-items-div {
+    overflow: hidden;
+    height: 250px;
+    /* background-color: #002e4d; */
+  }
+  .cart-popup-sub-items-full-div {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+    /* background-color: rgb(168, 67, 67); */
+  }
+  .cart-popup-phone-heading {
+    overflow: hidden;
+    /* background-color: #a3e583; */
+    height: 30px;
+  }
+  .discription-h3,
+  .discription-h4,
+  .cart-popup-item-name-h3 {
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .cart-popup-item-name-div {
+    overflow: hidden;
+    height: 23px;
+  }
+
+  .cart-popup-total-amount-div {
+    /* background-color: #44a1df; */
+    height: 30px;
+    overflow: hidden;
+  }
+  .cart-popup-total-amount-h3,
+  .cart-popup-total-amount-h4 {
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .cart-popup-order-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
 }

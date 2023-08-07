@@ -215,25 +215,37 @@
   }
   .logo-div {
     width: 250px;
-    /* background-color: #252525; */overflow-x: hidden;
+     /* background-color: #ec0909;  */
+    overflow-x: hidden;
   }
   .navlogo {
     width: 55px;
-    height: 55px;overflow-x: hidden;
+    height: 55px;
+    overflow-x: hidden;
+    /* background-color: #44a1df; */
   }
   .nav-edu {
-    font-size: 17px;overflow-x: hidden;
+    margin-right: 70px;
+    font-size: 17px;
+    overflow-x: hidden;
   }
   .nav-inpt-div {
     display: none;overflow-x: hidden;
+    justify-content: center;
   }
   .cart-login-div {
     width: 120px;
     /* background-color: #44a1df; */
   }
   .cart-div {
-    width: 100%;overflow-x: hidden;
-    /* background-color: #000000; */
+    width: 30%;
+    overflow-x: hidden;
+    /* background-color: #a15555; */
+  }
+  .login-div{
+    width: 40%;
+    overflow-x: hidden;
+    /* background-color: #55a18e; */
   }
   .cart-img {
     width: 18px;

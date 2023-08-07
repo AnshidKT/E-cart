@@ -10,7 +10,8 @@ const ThrdBody = () => {
           <div className="heighlt-img-div">
             {hieghlts.map((item) => (
               <img src={item.img} className="higlts-img" alt=""/>
-            ))}
+             
+           ))}
           </div>
         </div>
       </div>

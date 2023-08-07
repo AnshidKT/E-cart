@@ -19,31 +19,16 @@
 @media (max-width: 500px) {
   .FirstBody {
     margin-top: 60px;
-    height: 36vh;
-    background-color: rgb(24, 23, 23);
+    height: 28vh;
+    background-color: rgb(197, 10, 10);
   }
   .body-img {
-    height: 220px;
+    height: 170px;
+  }
+  #body-coro-div {
+    background-color: aqua;
   }
 }
-
-
-
-
-
-.caaaart{
-  width: 90%;
-  height: 100vh;
-  background-color: rgb(230, 96, 96);
-  position: absolute;
-}
-
-
-
-
-
-
-
 
 /* =======================================================scndbody============================================= */
 
@@ -114,7 +99,7 @@
   background-color: rgb(10, 10, 10);
   border-radius: 8px;
 }
-.menus-div:hover{
+.menus-div:hover {
   border: 1px solid rgba(255, 255, 255, 0.151);
 }
 .menus-img {
@@ -155,7 +140,7 @@
 @media (max-width: 500px) {
   .SecondBody {
     /* background-color: aqua; */
-    height: 220vh;
+    height: 115vh;
     justify-content: space-evenly;
   }
   .scndbody-caro {
@@ -180,7 +165,8 @@
 
   .scnd-menus-div {
     justify-content: space-between;
-    height: 88%;
+    width: 100%;
+    height: 530px;
     /* background-color: blue;  */
     align-items: center;
   }
@@ -190,17 +176,29 @@
   }
   .menus-head-div {
     /* background-color: brown; */
+    overflow: hidden;
     flex-direction: column;
-    height: 96%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
   }
 
   .menus-div {
-    width: 200px;
-    height: 280px;
+    width: 150px;
+    height: 220px;
+    margin-left: 20px;
   }
   .menus-img {
-    width: 200px;
-    height: 160px;
+    width: 160px;
+    height: 120px;
+  }
+  .menus-h3 {
+    font-size: 13px;
+  }
+  .menus-btn {
+    width: 100px;
+    font-size: 13px;
+    height: 30px;
   }
   .menus-text,
   .menus-h3,
@@ -255,6 +253,7 @@
 /* ----------------------MEDIAQUERYYY===================== */
 @media (max-width: 500px) {
   .ThrdBoy {
+    /* display: none; */
     /* background-color: rgb(20, 73, 73); */
     height: 60vh;
     align-items: flex-start;
@@ -269,16 +268,17 @@
   .heiglts-text {
     text-align: center;
     font-size: 20px;
+    overflow: hidden;
   }
   .heighlt-img-div {
     height: 350px;
     /* background-color: rgb(138, 112, 112); */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
   }
   .higlts-img {
-    margin-left: 3px;
-    width: 180px;
-    height: 90px;
+    margin-left: 20px;
+    width: 150px;
+    height: 100px;
     border-radius: 2px;
   }
 }
@@ -302,15 +302,21 @@
 
 @media (max-width: 500px) {
   .ForthBody {
-    margin-top: -140px;
-    height: 210vh;
+ 
+    height: 85vh;
     /* background-color: aqua; */
     align-items: flex-end;
     justify-content: center;
   }
   .menus-img2 {
-    width: 170px;
-    height: 150px;
+    width: 130px;
+    height: 100px;
+  }
+  .scnd-menus-div{
+    /* background-color: aqua; */
+  }
+  .menus-head-div{
+    /* background-color: blue; */
   }
 }
 
@@ -390,7 +396,7 @@
   .boult-img {
     width: 160px;
     height: 100px;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 
   .fifth-jack-div {
@@ -403,9 +409,10 @@
   }
 
   .jack-img {
+    
     margin-left: 9px;
     width: 170px;
-    border-radius: 2px;
+    border-radius: 5px;
     height: 190px;
   }
 }
@@ -453,6 +460,20 @@
 
 @media (max-width: 500px) {
   .Footer {
-    height: 25vh;
+    /* height: 25vh; */
+
+  }
+  .footer-p{
+    font-size: 15px;
+    /* background-color: aqua; */
+    overflow: hidden;
+  }
+  .sub-footer{
+    height: 100%;
+   
+    height: 20vh;
+  }
+  .media-div{
+    overflow: hidden;
   }
 }

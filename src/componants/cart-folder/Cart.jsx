@@ -88,6 +88,15 @@ const Cart = ({ cart, setCart, handlChange }) => {
     window.open(whatsappURL);
   };
 
+  const [validationError, setValidationError] = useState(false);
+  const validateForm = () => {
+    return (
+      userData.name.trim() !== "" &&
+      userData.address.trim() !== "" &&
+      userData.phoneNumber.trim() !== ""
+    );
+  };
+
   return (
     <div>
       {cart.length > 0 ? (
@@ -164,40 +173,75 @@ const Cart = ({ cart, setCart, handlChange }) => {
                 <h3 className="delvery-adrrss-h3">Add Delivery Address</h3>
               </div>
 
-              <div class="textInputWrapper">
-                {" "}
-                <input
-                  name="name"
-                  // value={userData.name}
-                  onChange={(event) => handleInputChange2(event)}
-                  placeholder="Enter Your Name"
-                  type="text"
-                  class="textInput"
-                />
+              <div className="textinput-and-error-div">
+                <div class="textInputWrapper">
+                  {" "}
+                  <input
+                    name="name"
+                    // value={userData.name}
+                    onChange={(event) => handleInputChange2(event)}
+                    placeholder="Enter Your Name"
+                    type="text"
+                    class={`textInput ${
+                      validationError && userData.name.trim() === ""
+                        ? "input-error"
+                        : ""
+                    }`}
+                  />
+                </div>
+                <div className="error-msg-div">
+                  {validationError && userData.name.trim() === "" && (
+                    <h6 className="error-message">Please text your name</h6>
+                  )}
+                </div>
               </div>
-
-              <div class="textInputWrapper">
-                {" "}
-                <input
-                  name="address"
-                  // value={userData.address}
-                  onChange={(event) => handleInputChange2(event)}
-                  placeholder="Current Address"
-                  type="text"
-                  class="textInput"
-                />
+              <div className="textinput-and-error-div">
+                <div class="textInputWrapper">
+                  {" "}
+                  <input
+                    name="address"
+                    // value={userData.address}
+                    onChange={(event) => handleInputChange2(event)}
+                    placeholder="Current Address"
+                    type="text"
+                    class={`textInput ${
+                      validationError && userData.address.trim() === ""
+                        ? "input-error"
+                        : ""
+                    }`}
+                  />
+                </div>
+                <div className="error-msg-div">
+                  {validationError && userData.address.trim() === "" && (
+                    <span className="error-message">
+                      Please text your address
+                    </span>
+                  )}
+                </div>
               </div>
-
-              <div class="textInputWrapper">
-                {" "}
-                <input
-                  name="phoneNumber"
-                  // value={userData.phoneNumber}
-                  onChange={(event) => handleInputChange2(event)}
-                  placeholder="Contact Number"
-                  type="text"
-                  class="textInput"
-                />
+              <div className="textinput-and-error-div">
+                <div class="textInputWrapper">
+                  {" "}
+                  <input
+                    name="phoneNumber"
+                    // value={userData.phoneNumber}
+                    onChange={(event) => handleInputChange2(event)}
+                    placeholder="Contact Number"
+                    type="text"
+                    class={`textInput ${
+                      validationError && userData.phoneNumber.trim() === ""
+                        ? "input-error"
+                        : ""
+                    }`}
+                  />
+                </div>
+                <div className="error-msg-div">
+                  {validationError && userData.phoneNumber.trim() === "" && (
+                    <span className="error-message">
+                      Please text your phone number
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -210,10 +254,14 @@ const Cart = ({ cart, setCart, handlChange }) => {
                 <button
                   className="cart-order-btn"
                   onClick={(event) => {
-                    showModal();
-                    handleInputChange2(event);
-                    handleInput3();
-                    // handleCheckout();
+                    if (validateForm()) {
+                      setValidationError(false);
+                      showModal();
+                      handleInputChange2(event);
+                      handleInput3();
+                    } else {
+                      setValidationError(true);
+                    }
                   }}
                 >
                   Check Out
