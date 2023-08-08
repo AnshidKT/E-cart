@@ -348,9 +348,9 @@
   .Mobiles {
     /* background-color: aqua; */
     margin-top: 80px;
-    height: 23vh;
+    height: 25vh;
     align-items: center;
-    display: none;
+    /* display: none; */
     justify-content: center;
   }
   .mobile-img {
@@ -362,15 +362,18 @@
 
   .ScndMobile {
     /* background-color: aqua; */
-    height: 155vh;
-    margin-top: 80px;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 150vh;
+    /* margin-top: 80px; */
     justify-content: space-between;
     overflow: hidden;
   }
   .sub-ScndMobile {
     /* background-color: rgb(11, 192, 41); */
-    width: 130px;
-    height: 1020px;
+    width: 100%;
+    align-items: center;
+    height: 730px;
     margin-top: 15px;
   }
   .mobile-trnd-h3 {
@@ -381,70 +384,76 @@
     height: 100%;
     /* background-color: brown; */
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .mobile-box {
-    width: 120px;
+    width: 150px;
     overflow: hidden;
     flex-direction: column;
     border-radius: 4px;
-    height: 150px;
-    margin-left: 15px;
+    height: 200px;
+    margin-left: 17px;
   }
   .mibile-imgg {
-    width: 60px;
+    width: 80px;
     height: 40%;
     overflow: hidden;
   }
   .mobile-details-div {
     /* background-color: blue; */
     width: 120px;
-    height: 85px;
+    height: 105px;
     overflow: hidden;
   }
   .phone-name {
-    font-size: 10px;
+    font-size: 12px;
     overflow: hidden;
   }
   .star-div {
     width: 50%;
     height: 10px;
+    margin-bottom: 2px;
   }
   .star {
     width: 10px;
     height: 10px;
   }
   .phone-btn {
-    width: 55px;
-    height: 15px;
+    width: 70px;
+    height: 25px;
     border-radius: 3px;
-    font-size: 8px;
+    font-size: 10px;
     overflow: hidden;
   }
 
   .mobile-about-div {
-    width: 220px;
-    height: 340px;
-    position: fixed;
+    width: 88%;
+    height: 250px;
+    /* position: fixed; */
+    /* margin-top: 10px;
+    margin-left: 140px; */
+    top: 0;
+    margin-bottom: 0;
     margin-top: 10px;
-
-    margin-left: 140px;
     /* background-color: cadetblue; */
   }
   .about-img-div {
     /* background-color: blue; */
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: repeat(1, 2fr); */
   }
   .about-mobile-img {
-    width: 170px;
+    width: 140px;
     height: 70px;
     border-radius: 5px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   .about-mobile-img2 {
     width: 170px;
     height: 80px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     border-radius: 5px;
   }
 
@@ -456,18 +465,22 @@
     overflow: hidden;
   }
   .sub-about-text-div {
-    width: 100%;
+    width: 65%;
     height: 100%;
-    position: absolute;
+    /* background-color: blue; */
+    /* position: absolute; */
     overflow: hidden;
   }
   .aboute-name-rate-div {
-    /* background-color: aqua; */
+    /* background-color: rgb(16, 126, 126); */
     overflow: hidden;
-    width: 60%;
+    width: 100%;
   }
   .about-phone-name {
     font-size: 12px;
+    overflow: hidden;
+  }
+  .about-rate-div {
     overflow: hidden;
   }
   .tax-div {
@@ -478,77 +491,90 @@
     font-size: 12px;
     overflow: hidden;
   }
+
   .taxe-h6 {
     font-size: 8px;
     overflow: hidden;
   }
   .or-div {
-    display: none;
+    /* display: none; */
+    width: 40px;
+    height: 40%;
+  }
+  .or {
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 8px;
   }
   .emi-div {
     overflow: hidden;
+    margin-top: 10px;
+    /* background-color: rgb(4, 63, 63); */
   }
   .emi-link-h6 {
     overflow: hidden;
     font-size: 8px;
+    margin-bottom: 20px;
   }
   .emi-h6 {
     font-size: 8px;
   }
   .about-features-div {
     overflow: hidden;
-    height: 170px;
-    /* background-color: aqua; */
-    margin-left: 5px;
+    width: 160px;
+    height: 130px;
+    /* background-color: rgb(56, 148, 64); */
+    margin-left: 18px;
   }
   .feature-list {
     overflow: hidden;
-    font-size: 12px;
+    font-size: 8px;
   }
   .features-h4 {
     overflow: hidden;
-    font-size: 12px;
+    font-size: 9px;
   }
   .about-cart-div {
     /* background-color: aqua; */
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .about-cart-btn-div {
-    width: 90px;
+    width: 70px;
     border-radius: 3px;
-    height: 30px;
+    height: 25px;
     overflow: hidden;
-    margin-right: 0;
+    margin-right: 10px;
   }
   .about-cart-img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   .close-btn {
-    width: 90px;
-    height: 30px;
-    margin-left: 0px;
-    font-size: 12px;
+    width: 60px;
+    height: 25px;
+    margin-left: 10px;
+    font-size: 9px;
+    border-radius: 3px;
   }
   .about-cart-btn {
-    width: 90px;
+    width: 50px;
     height: 30px;
     margin-left: 0px;
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .sub-about-phone-div {
-    position: relative;
-    height: 90px;
-    width: 80px;
+    /* position: relative; */
+    /* height: 90px;
+    width: 80px; */
     overflow: hidden;
     /* background-color: rgb(199, 8, 8); */
-    margin-bottom: 240px;
-    margin-left: 120px;
+    /* margin-bottom: 240px;
+    margin-left: 120px; */
   }
   .sub-about-phone-img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 160px;
     margin-top: 0;
   }
 }

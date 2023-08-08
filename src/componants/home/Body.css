@@ -20,13 +20,13 @@
   .FirstBody {
     margin-top: 60px;
     height: 28vh;
-    background-color: rgb(197, 10, 10);
+    /* background-color: rgb(197, 10, 10); */
   }
   .body-img {
     height: 170px;
   }
   #body-coro-div {
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 }
 

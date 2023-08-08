@@ -222,12 +222,6 @@ export const menus = [
   },
 
   {
-    img: "https://www.transparentpng.com/thumb/ac/HY2tmy-air-conditioning-simple-image.png",
-    text: "Air Conditioner",
-    link: "AirCondition",
-  },
-
-  {
     img: "https://i.pinimg.com/originals/ce/53/20/ce5320d6c5c0473084181cc6e99547f4.png",
     text: "Refrigerator",
     link: "/Fridge",
@@ -236,6 +230,11 @@ export const menus = [
     img: "https://i.pinimg.com/originals/ca/fb/90/cafb9062f27390676aa00d68f7dd1104.png",
     text: "Desktop",
     link: "/Desktop",
+  },
+  {
+    img: "https://www.transparentpng.com/thumb/ac/HY2tmy-air-conditioning-simple-image.png",
+    text: "Air Conditioner",
+    link: "AirCondition",
   },
 ];
 
@@ -311,7 +310,7 @@ export const mobile = [
     cat: "mobile",
     id: 2,
     img: "https://ohlocal-media.s3.amazonaws.com/media/SM117045SA.jpg",
-    name: "Vivo V27 5G (12GB RAM,256GB.Noble black)",
+    name: "Vivo V27 5G (12GB RAM,256GB. black)",
     rate: 35000,
     amount: 1,
 
@@ -325,7 +324,7 @@ export const mobile = [
     cat: "mobile",
     id: 3,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Morning%20mist-gallery.png",
-    name: "One Plus 115G (16GB RAM,256GB.Light Gray)",
+    name: "One Plus 115G (16GB RAM,256GB.Gray)",
     rate: 95030,
     amount: 1,
 
@@ -337,7 +336,7 @@ export const mobile = [
     cat: "mobile",
     id: 4,
     img: "https://freepngimg.com/save/133290-11-pic-apple-iphone-free-download-png-hd/940x1112",
-    name: "I Phone 11 pro  (4GB RAM,256GB.Glowing red)",
+    name: "I Phone 11 pro  (4GB RAM,256GB. red)",
     rate: 78050,
     amount: 1,
 
@@ -349,7 +348,7 @@ export const mobile = [
     cat: "mobile",
     id: 5,
     img: "https://oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/green-img.png",
-    name: "One Plus 115G (16GB RAM,256GB.Marble Observ)",
+    name: "One Plus 115G (16GB RAM,256GB.Marble )",
     rate: 84300,
     amount: 1,
 
@@ -428,7 +427,7 @@ export const mobile = [
     id: 11,
     img: actwo,
     name: "Voltas (Copper Condenser, Dust Filter, CRLASA0123T0231)",
-    rate: 31490.,
+    rate: 31490,
     star: "https://img.icons8.com/?size=512&id=8ggStxqyboK5&format=png",
     emi: "₹1,482/mo*",
   },

@@ -22,7 +22,13 @@
   /* align-items: center; */
   justify-content: space-evenly;
 }
-
+.ac-total-div {
+  width: 350px;
+  height: 1700px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
 .ac-items-div {
   width: 350px;
   height: 1700px;
@@ -111,4 +117,101 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+/* =================Meadia================ */
+
+@media (max-width: 500px) {
+  .ac-frstbody {
+    /* background-color: aqua; */
+    height: 25vh;
+    margin-top: 80px;
+    overflow: hidden;
+  }
+  .ac-main-img {
+    height: 90%;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .ac-items-about-div {
+    height: 180vh;
+    /* background-color: aqua; */
+    flex-direction: column-reverse;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .about-ac-img {
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-top: 45px;
+  }
+  .ac-items-div {
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    height: 99%;
+    /* background-color: rgb(160, 14, 14); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ac-card-div {
+    overflow: hidden;
+    width: 169px;
+    height: 250px;
+    margin-left: 9px;
+  }
+  .ac-card-images {
+    width: 160px;
+    overflow: hidden;
+    height: 80px;
+  }
+  .ac-card-name {
+    font-size: 12px;
+  }
+
+  .ac-card-name {
+    font-size: 12px;
+  }
+
+  .phone-btn {
+    font-size: 13px;
+  }
+
+  .mobile-trnd-h3 {
+    text-align: center;
+  }
+  .ac-total-div {
+    width: 100%;
+    overflow: hidden;
+    height: 870px;
+  }
+
+  .ac-about-acimg {
+    width: 80%;
+    height: 90px;
+    margin-top: 5px;
+  }
+
+  .ac-about-div {
+    overflow: hidden;
+    height: 300px;
+    width: 90%;
+    border-radius: 4px;
+    top: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* background-color: blue; */
+  }
+  .ac-features-div {
+    height: 80%;
+    border-radius: 4px;
+    margin-top: 30px;
+  }
+  .ac-about-line {
+    margin-top: 10px;
+  }
 }

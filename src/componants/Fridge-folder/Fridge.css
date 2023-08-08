@@ -35,3 +35,32 @@
   position: absolute;
   background-color: aliceblue;
 }
+
+
+/* ===========MEDIA========================= */
+
+@media(max-width:500px){
+  .Fridge-img-div{
+    /* background-color: aqua; */
+    height: 25vh;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  .frdge-main-img{
+    height: 90%;
+    border-radius: 4px;
+  }
+
+  .frdge-body-div{
+    /* background-color: aqua; */
+    align-items: center;
+    height: 155vh;
+    flex-direction: column-reverse;
+  }
+
+
+
+
+
+
+}

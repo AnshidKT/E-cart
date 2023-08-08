@@ -27,8 +27,11 @@ const AirCondition = ({handleClick}) => {
         />
       </div>
       <div className="ac-items-about-div">
-        <div className="ac-items-div">
+        <div className="ac-total-div">
+
+    
           <h3 className="mobile-trnd-h3">Air Conditions</h3>
+        <div className="ac-items-div">
 
           {acData.map((item) => (
             <div className="ac-card-div">
@@ -50,6 +53,7 @@ const AirCondition = ({handleClick}) => {
               />
             </div>
           ))}
+        </div>
         </div>
 
         <div className="ac-about-div">
